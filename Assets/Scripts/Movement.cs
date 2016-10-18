@@ -3,17 +3,18 @@
 public class Movement: MonoBehaviour
 {
     private float verticalVelocity;
-    public float gravity = 7.0f;
-    public float jumpForce = 2.0f;
-    public float speed = 5.0f;
+    public float gravity = 5.0f;
+    public float jumpForce = 1.5f;
+    public float speed = 8.0f;
+    public float slowDownSpeed = 0.7f;
     public KeyCode jumpKey = KeyCode.Space;
     public KeyCode mouseLockKey = KeyCode.Escape;
     bool lockstate = true;
-    public float turnSpeedx = 10;
-    public float turnSpeedy = 10;
+    public float turnSpeedx = 60;
+    public float turnSpeedy = 50;
     public Camera playerCamera;
-    public float maxCameraHeight = 240;
-    public float minCameraHeight = 120;
+    public float maxCameraHeight = 50;
+    public float minCameraHeight = -50;
 
     void Start()
     {
@@ -61,7 +62,12 @@ public class Movement: MonoBehaviour
         moveVector = new Vector3(Input.GetAxis("Horizontal"), verticalVelocity, Input.GetAxis("Vertical"));
         moveVector = transform.TransformDirection(moveVector);
         moveVector *= speed;
+        
         controller.Move(moveVector * Time.deltaTime);
+        moveVector.x *= slowDownSpeed;
+        moveVector.z *= slowDownSpeed;
+        controller.Move(moveVector * Time.deltaTime);
+        Debug.Log(Time.deltaTime);
 
     }
 }

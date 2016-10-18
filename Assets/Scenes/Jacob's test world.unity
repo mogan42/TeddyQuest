@@ -279,7 +279,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d96ccd8a4b7865f48ad419fe2a17b42f, type: 2}
+  - {fileID: 2100000, guid: 188eccb54e902a84fb98a4eac26f6ad0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -560,7 +560,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 58a02016533202847953fd759eaea429, type: 2}
+  - {fileID: 2100000, guid: 5665ac07bbb13d24d8c754f69f8e706a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -904,7 +904,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bcc1b345832d293489d27bead5ec484a, type: 2}
+  - {fileID: 2100000, guid: fa6a9a1b125fae8439d21b5d866a6768, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -993,7 +993,7 @@ CharacterController:
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
+  m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1187503695
 MonoBehaviour:
@@ -1025,9 +1025,11 @@ MonoBehaviour:
   gravity: 7
   jumpForce: 2
   speed: 5
+  slowDownSpeed: 0.5
   jumpKey: 32
   mouseLockKey: 27
-  turnSpeed: 50
+  turnSpeedx: 60
+  turnSpeedy: 50
   playerCamera: {fileID: 2133270093}
   maxCameraHeight: 40
   minCameraHeight: -40
@@ -1528,6 +1530,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 23000013998343158, guid: ad1ffd49609f14e4cad7fd8f6a507957,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fab629ebe5638634d91da8ba54c594e3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad1ffd49609f14e4cad7fd8f6a507957, type: 2}
   m_IsPrefabParent: 0
@@ -1570,6 +1577,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 23000013336681164, guid: d81c9d0a9667ca44fa9e770853f41e2c,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cfe80c41ba13ea441972e1934a18d141, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d81c9d0a9667ca44fa9e770853f41e2c, type: 2}
   m_IsPrefabParent: 0
