@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Models/Cave/Level Pieces/Rocks_setDressing/Materials.meta
+guid: a6ff8267057add74d932d311e3af8f30
+folderAsset: yes
+timeCreated: 1476745669
+=======
 guid: c08318f186cf69044bb23a305725adb3
 folderAsset: yes
 timeCreated: 1476742428
+>>>>>>> 851e8fc70ea5bb1233df8a60c10e1c9dce66a3eb:Assets/Models/Cave/Level Pieces/Rocks_setDressing/Materials.meta
 licenseType: Free
 DefaultImporter:
   userData: 
