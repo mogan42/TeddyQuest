@@ -11,21 +11,26 @@ ModelImporter:
     100006: pCylinder2
     100008: pCylinder3
     100010: persp1
+    100012: pCube2
     400000: //RootNode
     400002: curve1
     400004: pCube1
     400006: pCylinder2
     400008: pCylinder3
     400010: persp1
+    400012: pCube2
     2300000: pCube1
     2300002: pCylinder2
     2300004: pCylinder3
+    2300006: pCube2
     3300000: pCube1
     3300002: pCylinder2
     3300004: pCylinder3
+    3300006: pCube2
     4300000: pCylinder2
     4300002: pCylinder3
     4300004: pCube1
+    4300006: pCube2
     9500000: //RootNode
   materials:
     importMaterials: 1
