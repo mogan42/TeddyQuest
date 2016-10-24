@@ -267,7 +267,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f097de76a594f1342951cfe3de70025d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f097de76a594f1342951cfe3de70025d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -715,7 +715,7 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 1, g: 0.8392157, b: 0.6666667, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.1
   m_Range: 108.550476
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -1174,7 +1174,7 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 1, g: 0.8392157, b: 0.6666667, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.1
   m_Range: 108.550476
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -1825,7 +1825,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
 --- !u!4 &1215456613 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9715bba6b65a5234d900050e4a8c85bf, type: 3}
@@ -1910,7 +1910,7 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 1, g: 0.8392157, b: 0.6666667, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.1
   m_Range: 108.550476
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2054,7 +2054,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fe5b55414434a144bbd117900448c23a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fe5b55414434a144bbd117900448c23a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2089,7 +2089,7 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 1, g: 0.8392157, b: 0.6666667, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.1
   m_Range: 108.550476
   m_SpotAngle: 30
   m_CookieSize: 10
