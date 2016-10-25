@@ -38,7 +38,6 @@ public class Movement: MonoBehaviour
         {
             playerCamera.transform.localRotation = Quaternion.Euler(-minCameraHeight, 0, 0);
         }
-        Debug.Log(minCameraHeight);
         if (Input.GetKeyDown(jumpKey) && controller.isGrounded)
         {
 
@@ -67,7 +66,6 @@ public class Movement: MonoBehaviour
         moveVector.x *= slowDownSpeed;
         moveVector.z *= slowDownSpeed;
         controller.Move(moveVector * Time.deltaTime);
-        Debug.Log(Time.deltaTime);
 
     }
 }
