@@ -20,7 +20,6 @@ public class ObjectSpin : MonoBehaviour
         transform.Rotate(Vector3.up * Time.deltaTime * spinSpeed);
         angle += Speed * Time.deltaTime;
         if (angle > 270) angle -= 360;
-        Debug.Log(maxUpAndDown * Mathf.Sin(angle * toDegrees));
         transform.localPosition = new Vector3(transform.localPosition.x, startHeight + maxUpAndDown * (1 + Mathf.Sin(angle * toDegrees)), transform.localPosition.z);
     }
 }
