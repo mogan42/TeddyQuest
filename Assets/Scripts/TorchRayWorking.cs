@@ -6,10 +6,10 @@ public class TorchRayWorking : MonoBehaviour
     public float torchWidth = 20f;
     public float torchLength = 10f;
     public bool enemyInLight;
-    public float force = 100f;
+    //public float force = 100f;
     public Rigidbody rb1;
-    public Rigidbody rb2;
-    public Rigidbody rb3;
+    //public Rigidbody rb2;
+    //public Rigidbody rb3;
 
     private GameObject enemy;
 
@@ -20,7 +20,7 @@ public class TorchRayWorking : MonoBehaviour
 
     void Update()
     {
-        var enemies1 = GameObject.FindGameObjectsWithTag("enemy1");
+        var enemies1 = GameObject.FindGameObjectsWithTag("enemy");
         foreach(GameObject e1 in enemies1)
         {
             Vector3 direction = e1.transform.position - transform.position;
@@ -37,10 +37,11 @@ public class TorchRayWorking : MonoBehaviour
                     {
                         Debug.DrawRay(transform.position, direction.normalized, Color.green);
                         enemyInLight = true;
-                        //Debug.Log("Enemy Hit!");
+                        Debug.Log("Enemy Hit!");
                         //hit.rigidbody.AddForce(force * transform.up);
-                     
-                            Freeze1();
+                        var rb = e1.GetComponent<Rigidbody>();
+                        rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY;
+                        //Freeze1();
                         
                     }
                 }
@@ -48,12 +49,14 @@ public class TorchRayWorking : MonoBehaviour
             if(angle > torchWidth * 0.5f)
             {
                 enemyInLight = false;
-              
-                    Defrost1();
-                  
+
+                var rb = e1.GetComponent<Rigidbody>();
+                rb.constraints = RigidbodyConstraints.None;
+
             }
         }
 
+        /*
         var enemies2 = GameObject.FindGameObjectsWithTag("enemy2");
         foreach (GameObject e2 in enemies2)
         {
@@ -122,6 +125,7 @@ public class TorchRayWorking : MonoBehaviour
                 
             }
         }
+        */
     }
     void Freeze1()
     {
@@ -131,21 +135,21 @@ public class TorchRayWorking : MonoBehaviour
         }
     }
 
-    void Freeze2()
-    {
-        if(enemyInLight == true)
-        {
-            rb2.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY;
-        }
-    }
+    //void Freeze2()
+    //{
+    //    if(enemyInLight == true)
+    //    {
+    //        rb2.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY;
+    //    }
+    //}
 
-    void Freeze3()
-    {
-        if(enemyInLight == true)
-        {
-            rb3.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY;
-        }
-    }
+    //void Freeze3()
+    //{
+    //    if(enemyInLight == true)
+    //    {
+    //        rb3.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY;
+    //    }
+    //}
 
     void Defrost1()
     {
@@ -155,20 +159,20 @@ public class TorchRayWorking : MonoBehaviour
         }
     }
 
-    void Defrost2()
-    {
-        if (enemyInLight == false)
-        {
-            rb2.constraints = RigidbodyConstraints.None;
-        }
-    }
+    //void Defrost2()
+    //{
+    //    if (enemyInLight == false)
+    //    {
+    //        rb2.constraints = RigidbodyConstraints.None;
+    //    }
+    //}
 
-    void Defrost3()
-    {
-        if (enemyInLight == false)
-        {
-            rb3.constraints = RigidbodyConstraints.None;
-        }
-    }
+    //void Defrost3()
+    //{
+    //    if (enemyInLight == false)
+    //    {
+    //        rb3.constraints = RigidbodyConstraints.None;
+    //    }
+    //}
 
 }
