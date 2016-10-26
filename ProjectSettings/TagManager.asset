@@ -3,14 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - box
-<<<<<<< HEAD
-  - Box
-=======
-  - enemy
-  - movable
->>>>>>> 80183bdb3c7a823649212c6d737747f95d48bdd9
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -20,11 +13,7 @@ TagManager:
   - UI
   - 
   - 
-<<<<<<< HEAD
-  - Hands
-=======
-  - Hands/Torch
->>>>>>> 80183bdb3c7a823649212c6d737747f95d48bdd9
+  - 
   - 
   - 
   - 
