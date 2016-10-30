@@ -2632,7 +2632,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 170c9f8202d38e94e901a9ba0227f377, type: 3}
       propertyPath: m_TagString
-      value: Box
+      value: box
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 170c9f8202d38e94e901a9ba0227f377, type: 3}
