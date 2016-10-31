@@ -12,10 +12,11 @@ public class WanderingAI : MonoBehaviour
     public GameObject player;
     private NavMeshAgent m_agent;
     bool chaseable = false;
-    bool EnemyInLight = false;
     float distanceFromPlayer;
     float distanceFromPosition;
     Vector3 randomDirection;
+
+    public bool InLight { get; set; }
 
 
     // Use this for initialization
@@ -39,7 +40,7 @@ public class WanderingAI : MonoBehaviour
             chaseable = false;
             Debug.Log("player is not in range");
         }
-        if (chaseable && !EnemyInLight)
+        if (chaseable)
         {
             Chase();
         }
@@ -51,29 +52,37 @@ public class WanderingAI : MonoBehaviour
     }
 
     void Chase()
-    {
-        if (EnemyInLight)
-        {
-            m_agent.destination = m_agent.transform.position;
-        }
-        else
+    { 
+        if (!InLight)
         {
             m_agent.destination = player.transform.position;
         }
-    }
-    void Wander()
-    {
-        distanceFromPosition = Vector3.Distance(transform.position, m_agent.destination);
-       if (distanceFromPosition <= 1)
+        else
         {
-           randomDirection = Random.insideUnitSphere * roamRadius;
+            m_agent.Stop();
         }
-        Debug.Log(distanceFromPosition);
-        Debug.Log("I need to wander");
-        randomDirection += transform.position;
-        NavMeshHit hit;
-        NavMesh.SamplePosition(randomDirection, out hit, roamRadius, 1);
-        Vector3 finalPosition = hit.position;
-        m_agent.destination = finalPosition;
+    }
+    void Wander( )
+    {
+        if (!InLight)
+        {
+            distanceFromPosition = Vector3.Distance(transform.position, m_agent.destination);
+            if (distanceFromPosition <= 1)
+            {
+                randomDirection = Random.insideUnitSphere * roamRadius;
+            }
+            Debug.Log(distanceFromPosition);
+            Debug.Log("I need to wander");
+            randomDirection += transform.position;
+            NavMeshHit hit;
+            NavMesh.SamplePosition(randomDirection, out hit, roamRadius, 1);
+            Vector3 finalPosition = hit.position;
+            m_agent.destination = finalPosition;
+        }
+        else
+        {
+            m_agent.Stop();
+        }
+
     }
 }
