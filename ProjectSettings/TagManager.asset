@@ -4,13 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
   - enemy
-  - box
-=======
-  - enemy1
-  - camcol
->>>>>>> 0d9453bb11b127e5b97b8fd5d0877977a87a4b74
   layers:
   - Default
   - TransparentFX
@@ -20,7 +14,7 @@ TagManager:
   - UI
   - 
   - 
-  - Hands/Torch
+  - 
   - 
   - 
   - 

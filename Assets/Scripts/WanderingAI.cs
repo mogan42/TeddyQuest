@@ -15,7 +15,6 @@ public class WanderingAI : MonoBehaviour
     float distanceFromPlayer;
     float distanceFromPosition;
     Vector3 randomDirection;
-    public string enemyTag = "enemy";
 
     public bool InLight { get; set; }
 
