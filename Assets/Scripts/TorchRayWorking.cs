@@ -10,6 +10,7 @@ public class TorchRayWorking : MonoBehaviour
     public Rigidbody rb1;
     public Rigidbody rb2;
     public Rigidbody rb3;
+    Vector3 frozenPosition;
 
     private GameObject enemy;
 
@@ -33,14 +34,18 @@ public class TorchRayWorking : MonoBehaviour
 
                 if(Physics.Raycast(transform.position, direction.normalized, out hit, torchLength))
                 {
-                    if(hit.collider.gameObject == e1)
+                   // frozenPosition = hit.transform.position;
+                    if (hit.collider.gameObject == e1)
                     {
                         Debug.DrawRay(transform.position, direction.normalized, Color.green);
                         enemyInLight = true;
                         //Debug.Log("Enemy Hit!");
                         //hit.rigidbody.AddForce(force * transform.up);
-                     
+                       // hit.transform.position = frozenPosition;
                             Freeze1();
+
+                            var enemy = e1.GetComponent<WanderingAI>();
+                            enemy.InLight = true;
                         
                     }
                 }
@@ -127,6 +132,7 @@ public class TorchRayWorking : MonoBehaviour
     {
         if(enemyInLight == true)
         {
+          
             rb1.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY;
         }
     }
