@@ -15,6 +15,7 @@ public class WanderingAI : MonoBehaviour
     float distanceFromPlayer;
     float distanceFromPosition;
     Vector3 randomDirection;
+    public string enemyTag = "enemy";
 
     public bool InLight { get; set; }
 
@@ -56,9 +57,11 @@ public class WanderingAI : MonoBehaviour
         if (!InLight)
         {
             m_agent.destination = player.transform.position;
+            m_agent.Resume();
         }
         else
         {
+            Debug.Log("Stop");
             m_agent.Stop();
         }
     }

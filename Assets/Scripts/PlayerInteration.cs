@@ -31,7 +31,7 @@ public class PlayerInteration : MonoBehaviour
                 }
             }
         }
-        else interactKey.enabled = false;       
+        //else interactKey.enabled = false;       
     }
 
     void OnTriggerExit()
