@@ -11,15 +11,14 @@ public class PlayerInteration : MonoBehaviour
     public float Force = 10.0f;
 
 
-<<<<<<< HEAD
-    private GameObject movableObject;
-=======
 
-    void Start()
-    {
-        //interactKey.enabled = false;
-    }
->>>>>>> f72f443ac2513d93b84079114b8d1cfc981a0b9e
+    private GameObject movableObject;
+
+    //void Start()
+    //{
+    //    //interactKey.enabled = false;
+    //}
+
 
 
     void Update()
