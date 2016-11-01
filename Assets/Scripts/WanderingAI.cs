@@ -33,12 +33,12 @@ public class WanderingAI : MonoBehaviour
         if (distanceFromPlayer <= searchRadius)
         {
             chaseable = true;
-            Debug.Log("player is in range");
+            //Debug.Log("player is in range");
         }
         else if (distanceFromPlayer > searchRadius)
         {
             chaseable = false;
-            Debug.Log("player is not in range");
+            //Debug.Log("player is not in range");
         }
         if (chaseable)
         {
@@ -48,7 +48,17 @@ public class WanderingAI : MonoBehaviour
         {
             Wander();
         }
-
+        //var collider = GetComponent<CapsuleCollider>();
+        //var top = transform.TransformPoint(collider.center + new Vector3(0, collider.height / 2, 0));
+        //var bottom = transform.TransformPoint(collider.center - new Vector3(0, collider.height / 2, 0));
+        //var hits = Physics.OverlapCapsule(top, bottom, collider.radius+1f);
+        //foreach(Collider c in hits)
+        //{
+        //    if (c.gameObject.name == "Player")
+        //    {
+        //        Debug.Log("Hit: " + c.gameObject.name);
+        //    }
+        //}
     }
 
     void Chase()
@@ -60,7 +70,7 @@ public class WanderingAI : MonoBehaviour
         }
         else
         {
-            Debug.Log("Stop");
+            //Debug.Log("Stop");
             m_agent.Stop();
         }
     }
@@ -73,8 +83,8 @@ public class WanderingAI : MonoBehaviour
             {
                 randomDirection = Random.insideUnitSphere * roamRadius;
             }
-            Debug.Log(distanceFromPosition);
-            Debug.Log("I need to wander");
+            //Debug.Log(distanceFromPosition);
+            //Debug.Log("I need to wander");
             randomDirection += transform.position;
             NavMeshHit hit;
             NavMesh.SamplePosition(randomDirection, out hit, roamRadius, 1);
