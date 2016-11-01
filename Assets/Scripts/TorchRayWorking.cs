@@ -25,7 +25,7 @@ public class TorchRayWorking : MonoBehaviour
             enemy.InLight = false;
             Vector3 direction = e1.transform.position - transform.position;
             float angle = Vector3.Angle(direction, transform.up);
-            Debug.Log(angle);
+            //Debug.Log(angle);
             if (angle < torchWidth * 0.5f)
             {
                 RaycastHit hit;
@@ -36,7 +36,7 @@ public class TorchRayWorking : MonoBehaviour
                     {
                         Debug.DrawRay(transform.position, direction.normalized, Color.green);
                         enemyInLight = true;
-                        Debug.Log("Enemy Hit!");
+                        //Debug.Log("Enemy Hit!");
 
                         enemy.InLight = true;
 
