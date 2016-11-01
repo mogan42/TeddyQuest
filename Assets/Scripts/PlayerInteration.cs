@@ -5,71 +5,45 @@ using UnityEngine.UI;
 public class PlayerInteration : MonoBehaviour
 {
     public Text interactKey;
-    public KeyCode interactButton = KeyCode.E;
-    public float maxPickUpDistance = 5.0f;
+    public float visionWidth = 20f;
+    public float visionLength = 10f;
+    public KeyCode Button = KeyCode.Q;
+    public float Force = 10.0f;
 
-    private bool canInteract = false;
+
+    private GameObject movableObject;
 
 
-    void Start()
+    void Update()
     {
-        interactKey.enabled = false;
-    }
-
-
-    void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "movable")
+        var movableObjects = GameObject.FindGameObjectsWithTag("movable");
+        foreach (GameObject mo in movableObjects)
         {
-            DistanceCheck();
-            if (canInteract == true)
+            Vector3 direction = mo.transform.position - transform.position;
+            float angle = Vector3.Angle(direction, transform.up);
+            Debug.Log(angle);
+            if(angle < visionWidth * 0.5f)
             {
-                interactKey.enabled = true;
-                if (Input.GetKey(interactButton))
-                {
+                RaycastHit hit;
 
+                if (Physics.Raycast(transform.position, direction.normalized, out hit, visionLength))
+                {
+                    if (hit.collider.gameObject == mo)
+                    {
+                        Debug.DrawRay(transform.position, direction.normalized, Color.green);
+                        interactKey.gameObject.SetActive(true);
+                        if(Input.GetKey(Button))
+                        {
+                            hit.rigidbody.AddForceAtPosition(Force * direction, hit.point);
+
+                        }
+                    }
                 }
             }
-        }
-        //else interactKey.enabled = false;       
-    }
-
-    void OnTriggerExit()
-    {
-        if(gameObject.tag == "movable")
-        {
-            interactKey.enabled = false;
-        }
-    }
-
-    void DistanceCheck()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        RaycastHit hit;
-
-        if(Physics.Raycast(ray, out hit, maxPickUpDistance))
-        {
-            if(hit.distance <= maxPickUpDistance)
+            if(angle > visionWidth * 0.5f)
             {
-                if(hit.collider.gameObject.tag == "movable")
-                {
-                    canInteract = true;
-                    Debug.DrawRay(transform.position + transform.up, hit.transform.position, Color.green);
-                }
-                else
-                {
-                    canInteract = false;
-                }
+                     interactKey.gameObject.SetActive(false);
             }
-            else
-            {
-                canInteract = false;
-            }
-        }
-        else
-        {
-            canInteract = false;
         }
     }
 
