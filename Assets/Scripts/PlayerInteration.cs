@@ -13,7 +13,7 @@ public class PlayerInteration : MonoBehaviour
 
     void Start()
     {
-        interactKey.enabled = false;
+        //interactKey.enabled = false;
     }
 
 
