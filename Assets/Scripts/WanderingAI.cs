@@ -48,17 +48,6 @@ public class WanderingAI : MonoBehaviour
         {
             Wander();
         }
-        //var collider = GetComponent<CapsuleCollider>();
-        //var top = transform.TransformPoint(collider.center + new Vector3(0, collider.height / 2, 0));
-        //var bottom = transform.TransformPoint(collider.center - new Vector3(0, collider.height / 2, 0));
-        //var hits = Physics.OverlapCapsule(top, bottom, collider.radius+1f);
-        //foreach(Collider c in hits)
-        //{
-        //    if (c.gameObject.name == "Player")
-        //    {
-        //        Debug.Log("Hit: " + c.gameObject.name);
-        //    }
-        //}
     }
 
     void Chase()

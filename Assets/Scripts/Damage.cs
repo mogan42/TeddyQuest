@@ -46,8 +46,8 @@ public class Damage : MonoBehaviour {
                 {
                     Debug.Log("Hit: " + c.gameObject.name);
                     DamageTaken++;
-                    AlphaValue = ((DamageTaken/Lives) * 255)/255;
-                    CanvasOfDamageUI.color = new Vector4(1, 1, 1, AlphaValue);
+                    AlphaValue = ((DamageTaken/Lives + 1 /Lives) * 255)/255;
+                    CanvasOfDamageUI.color = new Vector4(1, 0, 0, AlphaValue);
                     Debug.Log("Damage taken: " + DamageTaken);
                     Debug.Log("alpha taken: " + AlphaValue);
                     damageTimer = damageCooldown;
