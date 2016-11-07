@@ -1952,6 +1952,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b5198d9e56240347b3f4cdc98ec2092, type: 3}
   m_IsPrefabParent: 0
+--- !u!20 &1519452884 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20000011211250850, guid: d4dc811f8d869c84ca179e1e2f1666a6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1990726812}
 --- !u!1001 &1538019488
 Prefab:
   m_ObjectHideFlags: 0
@@ -2537,7 +2542,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -7
+      value: -6.21
       objectReference: {fileID: 0}
     - target: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2545,19 +2550,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.6880259
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.7256862
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_RootOrder
@@ -2573,7 +2578,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -87.037
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 108000012326076768, guid: d4dc811f8d869c84ca179e1e2f1666a6,
         type: 2}
@@ -2645,6 +2650,11 @@ Prefab:
       propertyPath: height
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011959838962, guid: d4dc811f8d869c84ca179e1e2f1666a6,
+        type: 2}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 1519452884}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
   m_IsPrefabParent: 0
