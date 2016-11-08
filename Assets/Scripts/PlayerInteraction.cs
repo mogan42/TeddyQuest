@@ -7,10 +7,13 @@ public class PlayerInteraction : MonoBehaviour
     public Text interactKey;
     public float visionWidth = 20f;
     public float visionLength = 10f;
-    public KeyCode Button = KeyCode.Q;
     public float Force = 10.0f;
     private float lowestAngle = 100;
     private GameObject closestMoveable;
+    public string Box = "box";
+
+    // If this is changed make sure to change the canvas text
+    public KeyCode Button = KeyCode.Q;
 
 
 
@@ -25,7 +28,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        var movableObjects = GameObject.FindGameObjectsWithTag("movable");
+        var movableObjects = GameObject.FindGameObjectsWithTag(Box);
         //GameObject.FindObjectsOfType<ITorchInteractable>();
         lowestAngle = 100;
         foreach (GameObject mo in movableObjects)
