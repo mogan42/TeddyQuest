@@ -8,7 +8,6 @@ public class PlayerInteraction : MonoBehaviour
     public float visionWidth = 20f;
     public float visionLength = 10f;
     public float Force = 10.0f;
-    private float lowestAngle = 100;
     private GameObject closestMoveable;
     public string Box = "box";
 
@@ -28,46 +27,28 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        var movableObjects = GameObject.FindGameObjectsWithTag(Box);
-        //GameObject.FindObjectsOfType<ITorchInteractable>();
-        lowestAngle = 100;
-        foreach (GameObject mo in movableObjects)
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        string[] layers = { "Interact" };
+        var hits = Physics.OverlapSphere(transform.position, 10, LayerMask.GetMask(layers));
+        foreach (Collider mo in hits)
         {
-            Vector3 direction = mo.transform.position - transform.position;
-            float angle = Vector3.Angle(direction, transform.up);
-            Debug.Log(angle);
-            Debug.Log("lowest Angle" + lowestAngle);
-            if (angle < lowestAngle)
+            if (Physics.Raycast(ray, out hit))
             {
-                lowestAngle = angle;
-                closestMoveable = mo; 
-            }
-        }
-
-        Vector3 direction2 = closestMoveable.transform.position - transform.position;
-        float A = Vector3.Angle(direction2, transform.up);
-        Debug.Log(closestMoveable);
-         if (A < visionWidth * 0.5f)
-         {
-            RaycastHit hit;
-
-            if(Physics.Raycast(transform.position, direction2.normalized, out hit, visionLength))
-            {
-                if (hit.collider.gameObject == closestMoveable)
+                if (hit.collider.gameObject == mo.gameObject)
                 {
-                    Debug.DrawRay(transform.position, direction2.normalized, Color.green);
+                    Debug.DrawRay(transform.position, Vector3.forward,Color.green);
                     interactKey.gameObject.SetActive(true);
-                    if(Input.GetKey(Button))
-                    {
-                        hit.rigidbody.AddForceAtPosition(Force * direction2, hit.point);
-                    }
                 }
-             }
-         }
-        if (A > visionWidth * 0.5f)
-        {
-            interactKey.gameObject.SetActive(false);
+                else
+                {
+                    interactKey.gameObject.SetActive(false);
+                }
+            }
+
+            
         }
+            
      
     }
 }
