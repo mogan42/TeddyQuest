@@ -14297,7 +14297,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 965913d10fd80af4b87565f3564b17ea, type: 2}
+  - {fileID: 2100000, guid: dc0a6d2003f0bcb429d83802424c935a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -14827,6 +14827,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f59d43e820342b4c8aa0a1760415949, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &758339288 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
+  m_PrefabInternal: {fileID: 2139112463}
+--- !u!65 &758339290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 758339288}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.59779656, y: 0.8238802, z: 0.16653183}
+  m_Center: {x: 0.0043354183, y: 0.2880602, z: -0.029069915}
 --- !u!1 &761103528 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 9484ee6995b4bfa4883e337e91498b31, type: 3}
@@ -42502,6 +42518,18 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 287ff759872a4414eb61c98925beabc8, type: 2}
+    - target: {fileID: 100004, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
   m_IsPrefabParent: 0
@@ -42518,11 +42546,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 217.699
+      value: 2.43
       objectReference: {fileID: 0}
     - target: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.083
+      value: -13.63
       objectReference: {fileID: 0}
     - target: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_LocalRotation.x
@@ -42544,39 +42572,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011312039710, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 1000012700254820, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 108000011005528806, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: m_CullingMask.m_Bits
-      value: 4294967039
+    - target: {fileID: 1000013498063596, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 20000011211250850, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: m_HDR
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20000011211250850, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: m_CullingMask.m_Bits
-      value: 567
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012365908130, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: enemyInLight
-      value: 0
+    - target: {fileID: 1000012057262116, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 20000012400046088, guid: d4dc811f8d869c84ca179e1e2f1666a6,
         type: 2}
       propertyPath: m_CullingMask.m_Bits
       value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010516884200, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: visionLength
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
