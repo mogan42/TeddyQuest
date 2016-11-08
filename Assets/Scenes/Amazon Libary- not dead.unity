@@ -15817,7 +15817,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 82998391427833b428dc7bd0d3e88703, type: 2}
     - target: {fileID: 100000, guid: 6f59d43e820342b4c8aa0a1760415949, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f59d43e820342b4c8aa0a1760415949, type: 3}
@@ -42572,6 +42572,11 @@ Prefab:
         type: 2}
       propertyPath: m_CullingMask.m_Bits
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010516884200, guid: d4dc811f8d869c84ca179e1e2f1666a6,
+        type: 2}
+      propertyPath: visionLength
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
