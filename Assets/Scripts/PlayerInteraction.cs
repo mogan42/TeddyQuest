@@ -26,7 +26,7 @@ public class PlayerInteraction : MonoBehaviour
     void Update()
     {
         var movableObjects = GameObject.FindGameObjectsWithTag("movable");
-        GameObject.FindObjectsOfType<ITorchInteractable>();
+        //GameObject.FindObjectsOfType<ITorchInteractable>();
         lowestAngle = 100;
         foreach (GameObject mo in movableObjects)
         {
