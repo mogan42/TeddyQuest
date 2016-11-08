@@ -58,7 +58,6 @@ GameObject:
   - 95: {fileID: 95000011157440726}
   - 195: {fileID: 195000011614383968}
   - 135: {fileID: 135000013871340606}
-  - 114: {fileID: 114000010990486534}
   - 114: {fileID: 114000012726648750}
   m_Layer: 0
   m_Name: Gregory
@@ -392,17 +391,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000010990486534
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010295416778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90e7cb6646408fa4398693d78a040ae5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000012726648750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -416,7 +404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   searchRadius: 20
   roamRadius: 10
-  player: {fileID: 0}
+  player: {fileID: 1000011312039710, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
+  DTA: 3
 --- !u!135 &135000013871340606
 SphereCollider:
   m_ObjectHideFlags: 1
