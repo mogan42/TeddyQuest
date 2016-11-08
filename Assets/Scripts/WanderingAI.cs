@@ -11,6 +11,7 @@ public class WanderingAI : MonoBehaviour
     public float roamRadius = 10;
     public GameObject player;
     private NavMeshAgent m_agent;
+    public float DTA = 2;
     bool chaseable = false;
     float distanceFromPlayer;
     float distanceFromPosition;
@@ -68,7 +69,7 @@ public class WanderingAI : MonoBehaviour
         if (!InLight)
         {
             distanceFromPosition = Vector3.Distance(transform.position, m_agent.destination);
-            if (distanceFromPosition <= 1)
+            if (distanceFromPosition <= DTA)
             {
                 randomDirection = Random.insideUnitSphere * roamRadius;
             }
