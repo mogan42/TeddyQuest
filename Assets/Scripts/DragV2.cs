@@ -10,11 +10,9 @@ public class DragV2 : MonoBehaviour
     public float distanceFromObject = 10;
     public float heightOfTheGround = 6.5f;
     public float lowToGround = 0.2f;
-    Vector3 startingPosition;
     void OnMouseDown()
     {
         distance = Vector3.Distance(transform.position, other.transform.position);
-        startingPosition = transform.position;
     }
 
     void OnMouseDrag()
