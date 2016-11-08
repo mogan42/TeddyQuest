@@ -5,11 +5,9 @@ using UnityEngine.UI;
 public class PlayerInteraction : MonoBehaviour
 {
     public Text interactKey;
-    public float visionWidth = 20f;
     public float visionLength = 10f;
-    public float Force = 10.0f;
     private GameObject closestMoveable;
-    public string Box = "box";
+    public string LayerName = "Interact";
 
     // If this is changed make sure to change the canvas text
     public KeyCode Button = KeyCode.Q;
@@ -29,27 +27,16 @@ public class PlayerInteraction : MonoBehaviour
     {
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        string[] layers = { "Interact" };
-        var hits = Physics.OverlapSphere(transform.position, 10, LayerMask.GetMask(layers));
-        foreach (Collider mo in hits)
+        string[] layers = { LayerName };
+        if (Physics.Raycast(ray, out hit, visionLength, LayerMask.GetMask(layers)))
         {
-            if (Physics.Raycast(ray, out hit))
-            {
-                if (hit.collider.gameObject == mo.gameObject)
-                {
-                    Debug.DrawRay(transform.position, Vector3.forward,Color.green);
-                    interactKey.gameObject.SetActive(true);
-                }
-                else
-                {
-                    interactKey.gameObject.SetActive(false);
-                }
-            }
-
-            
+            Debug.DrawRay(transform.position, Vector3.forward,Color.green);
+            interactKey.gameObject.SetActive(true);
         }
-            
-     
+        else
+        {
+            interactKey.gameObject.SetActive(false);
+        }
     }
 }
     

@@ -879,10 +879,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactKey: {fileID: 114000012789525732}
-  visionWidth: 20
   visionLength: 10
-  Force: 10
-  Box: box
+  LayerName: Interact
   Button: 0
 --- !u!114 &114000010523135056
 MonoBehaviour:
@@ -1361,9 +1359,9 @@ Canvas:
   m_GameObject: {fileID: 1000012057262116}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 20000011211250850}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 1
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
