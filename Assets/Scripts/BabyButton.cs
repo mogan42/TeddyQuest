@@ -11,6 +11,11 @@ public class BabyButton : MonoBehaviour
     public KeyCode KeyToPress = KeyCode.E;
     private float timer = 0;
     private bool correct = false;
+    //Animation Stuff
+    public Animator animator;
+    //Audio stuff
+    //public AudioSource door;
+    //public AudioClip doorMoving;
     // Use this for initialization
     void Start ()
     {
@@ -26,18 +31,18 @@ public class BabyButton : MonoBehaviour
         RaycastHit hit;
         if (Input.GetKeyDown(KeyToPress))
         {
-            Debug.Log("made it");
+            //Debug.Log("made it");
             if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log(hit.collider.gameObject.name);
-                Debug.DrawRay(transform.position,Vector3.forward, Color.green);
+                //Debug.Log(hit.collider.gameObject.name);
+                //Debug.DrawRay(transform.position,Vector3.forward, Color.green);
                 if(hit.transform.gameObject == button1)
                 {
                     input += "1";
                     ClickedButton1.transform.position = button1.transform.position;
                     button1.SetActive(false);
                     ClickedButton1.SetActive(true);
-                    Debug.Log("hit 1");
+                    //Debug.Log("hit 1");
                     timer = restartCooldown;
                     amountOfButtonsPressed++;
                 }
@@ -47,7 +52,7 @@ public class BabyButton : MonoBehaviour
                     ClickedButton2.transform.position = button2.transform.position;
                     button2.SetActive(false);
                     ClickedButton2.SetActive(true);
-                    Debug.Log("hit 2");
+                    //Debug.Log("hit 2");
                     timer = restartCooldown;
                     amountOfButtonsPressed++;
                 }
@@ -57,7 +62,7 @@ public class BabyButton : MonoBehaviour
                     ClickedButton3.transform.position = button3.transform.position;
                     button3.SetActive(false);
                     ClickedButton3.SetActive(true);
-                    Debug.Log("hit 3");
+                    //Debug.Log("hit 3");
                     amountOfButtonsPressed++;
                     timer = restartCooldown;
                 }
@@ -85,6 +90,11 @@ public class BabyButton : MonoBehaviour
         if(correct)
         {
             //do the thing you wanted it to do.
+            //animating door
+            animator.SetTrigger("moveDoor");
+            //giving the door sound
+            //door.PlayOneShot(doorMoving, 0.7f);
+            //Debug.Log("I'm working");
         }
 
     }

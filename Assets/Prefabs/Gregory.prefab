@@ -404,7 +404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   searchRadius: 20
   roamRadius: 10
-  player: {fileID: 1000011312039710, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
+  player: {fileID: 0}
   DTA: 3
 --- !u!135 &135000013871340606
 SphereCollider:

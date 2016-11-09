@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TwoButtons : MonoBehaviour
+public class OneButton : MonoBehaviour
 {
-    public GameObject button1, button2, itemToRemove;
+    public GameObject button1, itemToRemove;
     public KeyCode KeyToPress = KeyCode.E;
     private int buttonsPressed;
     private bool button1Pressed, button2Pressed;
@@ -11,7 +11,7 @@ public class TwoButtons : MonoBehaviour
     //public AudioClip buttonSound;
     //public AudioSource buttonAudio;
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         buttonsPressed = 0;
         button1Pressed = false;
@@ -19,9 +19,9 @@ public class TwoButtons : MonoBehaviour
         //audio = GetComponent<AudioSource>();
         //audio.clip = buttonSound;
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         if (Input.GetKeyDown(KeyToPress))
         {
@@ -29,7 +29,7 @@ public class TwoButtons : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.transform.gameObject == button1 && button1Pressed==false)
+                if (hit.transform.gameObject == button1)
                 {
                     buttonsPressed++;
                     button1Pressed = true;
@@ -37,19 +37,16 @@ public class TwoButtons : MonoBehaviour
                     //changed this
                     //buttonAudio.PlayOneShot(buttonSound);
                 }
-                else if (hit.transform.gameObject == button2 && button2Pressed == false)
-                {
-                    buttonsPressed++;
-                    button2Pressed = true;
-                    button2.gameObject.layer = LayerMask.NameToLayer("Default");
-                    //changed this
-                    //buttonAudio.PlayOneShot(buttonSound);
-                }
+
             }
         }
-        if (buttonsPressed == 2)
+
+        if (buttonsPressed == 1)
+        
         {
             itemToRemove.SetActive(false);
-        }
+
+        } 
     }
 }
+        
