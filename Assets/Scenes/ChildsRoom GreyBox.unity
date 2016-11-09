@@ -3599,7 +3599,7 @@ Prefab:
     - target: {fileID: 2300004, guid: b7a5fc98a94e0924bb2fd61803fcfb85, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 44aaddad04b94a240adf221540fbb3d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 33ee16584ceb5ed48bdeb67c81b87c9b, type: 2}
     - target: {fileID: 2300002, guid: b7a5fc98a94e0924bb2fd61803fcfb85, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
