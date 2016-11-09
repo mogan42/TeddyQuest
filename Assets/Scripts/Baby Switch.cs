@@ -4,6 +4,7 @@ using System.Collections;
 public class BabySwitch : MonoBehaviour
 {
     public GameObject button1, itemToRemove;
+    public KeyCode KeyToPress = KeyCode.E;
     // Use this for initialization
     void Start ()
     {
