@@ -43,10 +43,10 @@ public class TwoButtons : MonoBehaviour
                     audio.Play();
                 }
             }
-            if(buttonsPressed ==2)
-            {
-                itemToRemove.SetActive(false);
-            }
+        }
+        if (buttonsPressed == 2)
+        {
+            itemToRemove.SetActive(false);
         }
     }
 }
