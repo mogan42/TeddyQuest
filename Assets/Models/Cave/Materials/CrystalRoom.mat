@@ -72,7 +72,7 @@ Material:
     - first:
         name: _SpecGlossMap
       second:
-        m_Texture: {fileID: 2800000, guid: a89283bb52a96314695ee4a9f98cd741, type: 3}
+        m_Texture: {fileID: 2800000, guid: 208b77660d679554e823f6925b50516f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -127,7 +127,7 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.32352942, g: 0.25155267, b: 0.18317474, a: 1}
+      second: {r: 0.24705882, g: 0.16862746, b: 0.09411765, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
