@@ -12,7 +12,7 @@ public class BabyButton : MonoBehaviour
     private float timer = 0;
     private bool correct = false;
     //Animation Stuff
-    public Animator animator;
+    public Animator babyButtons;
     //Audio stuff
     //public AudioSource door;
     //public AudioClip doorMoving;
@@ -91,7 +91,7 @@ public class BabyButton : MonoBehaviour
         {
             //do the thing you wanted it to do.
             //animating door
-            animator.SetTrigger("moveDoor");
+            babyButtons.SetTrigger("moveDoor");
             //giving the door sound
             //door.PlayOneShot(doorMoving, 0.7f);
             //Debug.Log("I'm working");

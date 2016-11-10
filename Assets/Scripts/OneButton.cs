@@ -3,11 +3,13 @@ using System.Collections;
 
 public class OneButton : MonoBehaviour
 {
-    public GameObject button1, itemToRemove;
+    public GameObject button1;
     public KeyCode KeyToPress = KeyCode.E;
     private int buttonsPressed;
     private bool button1Pressed, button2Pressed;
     // Morgans edit (was getting errors so I fixed them)|| could not get it working so im comenting it out.
+    public Animator childsExitDoor;
+    public Animator doorSwitch;
     //public AudioClip buttonSound;
     //public AudioSource buttonAudio;
     // Use this for initialization
@@ -34,6 +36,8 @@ public class OneButton : MonoBehaviour
                     buttonsPressed++;
                     button1Pressed = true;
                     button1.gameObject.layer = LayerMask.NameToLayer("Default");
+                    //added animation
+                    doorSwitch.SetTrigger("PulledSwitch");
                     //changed this
                     //buttonAudio.PlayOneShot(buttonSound);
                 }
@@ -44,7 +48,7 @@ public class OneButton : MonoBehaviour
         if (buttonsPressed == 1)
         
         {
-            itemToRemove.SetActive(false);
+            childsExitDoor.SetTrigger("SwitchIsToggled");
 
         } 
     }
