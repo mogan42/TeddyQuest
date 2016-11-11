@@ -42375,28 +42375,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1000012700254820, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000013498063596, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000012057262116, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 20000012400046088, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: m_CullingMask.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010061104632, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: Lives
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 114000010061104632, guid: d4dc811f8d869c84ca179e1e2f1666a6,
         type: 2}
       propertyPath: Spawnpoint
