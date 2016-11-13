@@ -845,11 +845,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afd97599898696b4d884e8266b9f5235, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &148108304 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013734544026, guid: afd97599898696b4d884e8266b9f5235,
-    type: 2}
-  m_PrefabInternal: {fileID: 148108303}
 --- !u!1001 &177644867
 Prefab:
   m_ObjectHideFlags: 0
@@ -3165,7 +3160,8 @@ MonoBehaviour:
   vegForest: {fileID: 66730629}
   amazonLibrary: {fileID: 737635330}
   childsRoom: {fileID: 1580820074}
-  globalController: {fileID: 148108304}
+  globalController: {fileID: 1000013734544026, guid: afd97599898696b4d884e8266b9f5235,
+    type: 2}
 --- !u!4 &922737262
 Transform:
   m_ObjectHideFlags: 0
