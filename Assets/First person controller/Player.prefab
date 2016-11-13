@@ -160,6 +160,7 @@ GameObject:
   - 114: {fileID: 114000010061104632}
   - 114: {fileID: 114000013573243570}
   - 114: {fileID: 114000013221289324}
+  - 114: {fileID: 114000011747543008}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -925,7 +926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730475ee64f9a894bbac0d9e6f22e813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 2
+  mode: 1
   sensitivityDepth: 1
   sensitivityNormals: 1
   lumThreshold: 0.2
@@ -1107,6 +1108,22 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
+--- !u!114 &114000011747543008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011312039710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544fa0caa052e124bb8ea076ad601b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caveExit: 0
+  vegForestExit: 0
+  amazonLibraryExit: 0
+  childsRoomExit: 0
+  numberOfKeys: 0
 --- !u!114 &114000011938447956
 MonoBehaviour:
   m_ObjectHideFlags: 1
