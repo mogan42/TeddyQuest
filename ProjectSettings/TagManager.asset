@@ -8,6 +8,7 @@ TagManager:
   - movable
   - box
   - pedestal
+  - toy1
   layers:
   - Default
   - TransparentFX
