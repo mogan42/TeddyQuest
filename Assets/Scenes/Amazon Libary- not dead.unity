@@ -42406,17 +42406,17 @@ Prefab:
     - target: {fileID: 114000010523135056, guid: d4dc811f8d869c84ca179e1e2f1666a6,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000010614358730, guid: d4dc811f8d869c84ca179e1e2f1666a6,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000011938447956, guid: d4dc811f8d869c84ca179e1e2f1666a6,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}

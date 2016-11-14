@@ -2586,7 +2586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4239ad5947d0aa4e8e5b32850dc0340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 937094939}
   sceneName: Veg Forest
 --- !u!65 &761741423
 BoxCollider:
@@ -3408,6 +3408,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &937094939 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011312039710, guid: d4dc811f8d869c84ca179e1e2f1666a6,
+    type: 2}
+  m_PrefabInternal: {fileID: 937094938}
 --- !u!4 &937094940 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011248136238, guid: d4dc811f8d869c84ca179e1e2f1666a6,
@@ -3675,7 +3680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4239ad5947d0aa4e8e5b32850dc0340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 937094939}
   sceneName: Amazon Libary- not dead
 --- !u!65 &1021660771
 BoxCollider:
@@ -5590,7 +5595,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6e7c729e5cc2094dbccf661dab68e49, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f6e7c729e5cc2094dbccf661dab68e49, type: 3}
@@ -5790,7 +5795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4239ad5947d0aa4e8e5b32850dc0340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 937094939}
   sceneName: Cave Not-Greybox
 --- !u!65 &1647150450
 BoxCollider:
