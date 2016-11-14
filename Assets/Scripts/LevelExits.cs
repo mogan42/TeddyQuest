@@ -7,7 +7,7 @@ public class LevelExits : MonoBehaviour {
     public GameObject amazonLibrary;
     public GameObject childsRoom;
 
-    private GameObject levelEntrancePoint;
+    private GameObject globalLogObject;
     public GameObject globalController;
     // Use this for initialization
     void Start()
@@ -46,10 +46,12 @@ public class LevelExits : MonoBehaviour {
     void Update()
     {
 
-        GlobalLog levelEntrancePoint = globalController.GetComponent<GlobalLog>();
-        //levelEntrancePoint = GameObject.Find("GlobalLogObject").GetComponent<GlobalLog>();
+        //GlobalLog levelEntrancePoint = globalController.GetComponent<GlobalLog>();
+        globalLogObject = GameObject.Find("GlobalLogObject");
+        GlobalLog levelEntrancePoint = globalLogObject.GetComponent<GlobalLog>();
+
         //{
-            //Debug.Log("ahhhh");
+            Debug.Log("ahhhh");
             if (levelEntrancePoint.caveExit == true)
             {
                 Debug.Log("First level down");
@@ -88,7 +90,7 @@ public class LevelExits : MonoBehaviour {
                 }
 
             }
-
+        Debug.Log("help please");
         //}
     }
 

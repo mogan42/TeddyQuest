@@ -6,13 +6,6 @@ public class TorchRayWorking : MonoBehaviour
     public float torchWidth = 20f;
     public float torchLength = 10f;
     public bool enemyInLight;
-    public Rigidbody rb1;
-
-    public Rigidbody rb2;
-    public Rigidbody rb3;
-    Vector3 frozenPosition;
-
-
     private GameObject enemy;
 
 
