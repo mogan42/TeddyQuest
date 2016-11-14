@@ -17,6 +17,7 @@ public class Damage : MonoBehaviour {
     public RawImage CanvasOfDamageUI;
     public string HexColour;
     float AlphaValue;
+    public Canvas DeadScreen;
     Collision col;
 
     private float damageTimer = 0;
@@ -25,7 +26,9 @@ public class Damage : MonoBehaviour {
     void Start ()
     {
         DamageTaken = 0;
-        AlphaValue = 0; 
+        AlphaValue = 0;
+        DeadScreen.gameObject.SetActive(false);
+        Spawnpoint.transform.position = transform.position;
     }
 	
 	// Update is called once per frame
@@ -57,12 +60,11 @@ public class Damage : MonoBehaviour {
         }
         if(DamageTaken == Lives)
         {
-            
-            transform.position = Spawnpoint.transform.position;
+            Time.timeScale = 0;
             DamageTaken = 0;
             AlphaValue = ((DamageTaken / Lives) * 255) / 255;
             CanvasOfDamageUI.color = new Vector4(1, 1, 1, AlphaValue);
-
+            DeadScreen.gameObject.SetActive(true);
 
         }
     }

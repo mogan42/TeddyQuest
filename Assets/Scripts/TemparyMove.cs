@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-public class Movement : MonoBehaviour
+
+public class TemparyMove : MonoBehaviour
 {
+
     private float verticalVelocity;
     public float gravity = 1.5f;
     public float jumpForce = 0.7f;
@@ -15,11 +17,12 @@ public class Movement : MonoBehaviour
     public float maxCameraHeight = 60;
     public float minCameraHeight = -60;
     public Canvas PausedMenu;
+    private bool lockedstate;
     void Start()
     {
         PausedMenu.gameObject.SetActive(false);
-       Cursor.lockState = CursorLockMode.Locked;
-        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
+        lockedstate = true;
     }
 
     void Update()
@@ -27,22 +30,24 @@ public class Movement : MonoBehaviour
         if (Input.GetKeyDown(mouseLockKey))
         {
             Debug.Log("key is pressed");
-            if (Cursor.lockState == CursorLockMode.Locked)
+            if (lockedstate == true)
             {
                 Cursor.lockState = CursorLockMode.None;
                 Time.timeScale = 0;
                 PausedMenu.gameObject.SetActive(true);
                 Debug.Log("Unlocked cursor");
+                lockedstate = false;
             }
-            else if (Cursor.lockState == CursorLockMode.None)
+            else if (lockedstate == false)
             {
-                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.lockState = CursorLockMode.Confined;
                 Time.timeScale = 1;
                 PausedMenu.gameObject.SetActive(false);
                 Debug.Log("Locked cursor");
+                lockedstate = true;
             }
         }
-        if (Time.timeScale == 1)
+        if (Cursor.lockState != CursorLockMode.Locked)
         {
             CharacterController controller = GetComponent<CharacterController>();
             verticalVelocity -= gravity * Time.deltaTime;
@@ -62,7 +67,7 @@ public class Movement : MonoBehaviour
             {
                 verticalVelocity = jumpForce;
             }
-           
+
             Vector3 moveVector = Vector3.zero;
             moveVector = new Vector3(Input.GetAxis("Horizontal"), verticalVelocity, Input.GetAxis("Vertical"));
             moveVector = transform.TransformDirection(moveVector);
@@ -72,7 +77,6 @@ public class Movement : MonoBehaviour
             moveVector.x *= slowDownSpeed;
             moveVector.z *= slowDownSpeed;
             controller.Move(moveVector * Time.deltaTime);
-
         }
 
     }
