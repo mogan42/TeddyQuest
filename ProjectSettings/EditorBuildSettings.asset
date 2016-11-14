@@ -4,4 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Corridor Hub.unity
+  - enabled: 1
+    path: Assets/Scenes/ChildsRoom GreyBox.unity
+  - enabled: 1
+    path: Assets/Scenes/Cave Not-Greybox.unity
+  - enabled: 1
+    path: Assets/Scenes/Veg Forest.unity
+  - enabled: 1
+    path: Assets/Scenes/Amazon Libary- not dead.unity
