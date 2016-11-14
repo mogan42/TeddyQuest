@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PedestalCheck1 : MonoBehaviour
 {
+    /*
     public float checkLength = 20.0f;
     private RaycastHit hit;
 
@@ -21,5 +22,5 @@ public class PedestalCheck1 : MonoBehaviour
             }
         }
 
-    }
+    }*/
 }
