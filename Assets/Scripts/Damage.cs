@@ -31,11 +31,21 @@ public class Damage : MonoBehaviour {
     {
         return IsDead;
     }
-	// Update is called once per frame
-	void Update ()
+
+    public void Respawn()
+    {
+        DeadScreen.gameObject.SetActive(false);
+        transform.position = Spawnpoint.transform.position;
+        Time.timeScale = 1;
+        IsDead = false;
+        DamageTaken = 0;
+        AlphaValue = ((DamageTaken / Lives) * 255) / 255;
+        CanvasOfDamageUI.color = new Vector4(1, 1, 1, AlphaValue);
+    }
+    // Update is called once per frame
+    void Update ()
     {
         damageTimer -= Time.deltaTime;
-
         if (damageTimer <= 0)
         {
             var collider = GetComponent<CapsuleCollider>();
@@ -61,17 +71,10 @@ public class Damage : MonoBehaviour {
         if(DamageTaken == Lives)
         {
             Time.timeScale = 0;
-            DamageTaken = 0;
-            AlphaValue = ((DamageTaken / Lives) * 255) / 255;
-            CanvasOfDamageUI.color = new Vector4(1, 1, 1, AlphaValue);
             DeadScreen.gameObject.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             IsDead = true;
             Debug.Log(IsDead);
-        }
-        else
-        {
-            IsDead = false;
         }
     }
     
