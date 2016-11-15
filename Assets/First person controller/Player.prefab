@@ -219,6 +219,9 @@ GameObject:
   - 114: {fileID: 114000011213038446}
   - 114: {fileID: 114000011181668754}
   - 114: {fileID: 114000012576501334}
+  - 114: {fileID: 114000010478507692}
+  - 114: {fileID: 114000010673865984}
+  - 114: {fileID: 114000010856086630}
   m_Layer: 8
   m_Name: Pause Menu
   m_TagString: Untagged
@@ -921,7 +924,7 @@ GameObject:
   - 114: {fileID: 114000013327360458}
   - 114: {fileID: 114000014270778018}
   m_Layer: 8
-  m_Name: Rspawn Button
+  m_Name: Respawn Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1405,8 +1408,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011312039710}
-  m_LocalRotation: {x: -0, y: 0.66057, z: -0, w: 0.7507645}
-  m_LocalPosition: {x: -13.01, y: -5, z: 16.17}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -10.08, y: 2.1801155, z: -17.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 82.886, z: 0}
   m_Children:
@@ -1987,7 +1990,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 567
+    m_Bits: 535
   m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2400,6 +2403,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114000010478507692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010400182420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 298adfb908c2b884291fc23407244cfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000010503635854
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2481,6 +2495,17 @@ MonoBehaviour:
   edgesOnly: 0
   edgesOnlyBgColor: {r: 1, g: 1, b: 1, a: 1}
   edgeDetectShader: {fileID: 4800000, guid: 0d1644bdf064147baa97f235fc5b4903, type: 3}
+--- !u!114 &114000010673865984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010400182420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ee81022adc373489e67772ee98f2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000010701128024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2606,6 +2631,17 @@ MonoBehaviour:
   blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
   brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
     type: 3}
+--- !u!114 &114000010856086630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010400182420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d22a9b3c5fd95488380998cfd10b93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000011090890222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2706,7 +2742,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114000011181668754}
+      - m_Target: {fileID: 114000010673865984}
         m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
@@ -2758,7 +2794,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114000012576501334}
+      - m_Target: {fileID: 114000010856086630}
         m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
@@ -3234,9 +3270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887ad70e25a209544bb525722ecfc3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spawner: {fileID: 0}
-  player: {fileID: 1000011312039710}
-  canvas: {fileID: 223000010393002556}
+  damage: {fileID: 114000010061104632}
 --- !u!114 &114000012874267306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3415,7 +3449,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114000011213038446}
+      - m_Target: {fileID: 114000010478507692}
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:

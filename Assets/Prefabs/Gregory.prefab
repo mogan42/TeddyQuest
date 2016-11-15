@@ -59,6 +59,7 @@ GameObject:
   - 195: {fileID: 195000011614383968}
   - 135: {fileID: 135000013871340606}
   - 114: {fileID: 114000012726648750}
+  - 135: {fileID: 135000013264099156}
   m_Layer: 0
   m_Name: Gregory
   m_TagString: enemy
@@ -207,7 +208,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010295416778}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.146243, y: 2.189, z: -14.974943}
+  m_LocalPosition: {x: 5.4381447, y: -0.979, z: -16.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -346,7 +347,7 @@ MeshCollider:
   m_GameObject: {fileID: 1000010432750894}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: f99c4cbc51dc2384b8b3f8c5238ba82b, type: 3}
@@ -406,6 +407,18 @@ MonoBehaviour:
   roamRadius: 10
   player: {fileID: 0}
   DTA: 3
+--- !u!135 &135000013264099156
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010295416778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0939393
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!135 &135000013871340606
 SphereCollider:
   m_ObjectHideFlags: 1

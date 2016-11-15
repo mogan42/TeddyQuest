@@ -8,6 +8,11 @@ TagManager:
   - movable
   - box
   - pedestal
+<<<<<<< HEAD
+  - Cubes
+=======
+  - toy1
+>>>>>>> 19821dae8b212a5515e88bf76e1a66dd570c8f32
   layers:
   - Default
   - TransparentFX

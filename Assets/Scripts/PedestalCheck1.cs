@@ -3,24 +3,32 @@ using System.Collections;
 
 public class PedestalCheck1 : MonoBehaviour
 {
-    /*
-    public float checkLength = 20.0f;
-    private RaycastHit hit;
+    public PedestalDoorOpen PDO;
 
+    public float checkLength = 20.0f;
+    public GameObject toy1, floatingToy1;
 
     // Update is called once per frame
     void Update ()
     {
+        Vector3 up = transform.TransformDirection(Vector3.up);
+        Debug.DrawRay(transform.position + transform.up * 0.5f, up, Color.green);
+
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, Vector3.up , out hit , checkLength ))
+        if (Physics.Raycast(transform.position + transform.up * 0.5f, up, out hit, checkLength))
         {
-            if(hit.gameObject.tag == "toy1")
+          
+            if(hit.transform.gameObject == toy1)
             {
-                Debug.DrawRay(transform.position, Vector3.up , Color.green , checkLength);
-
+                toy1.SetActive(false);
+                floatingToy1.SetActive(true);
+                PDO.CountIncrease();
             }
         }
-
-    }*/
+    }
 }
+
+
+       //   PedestalDoorOpen
+
