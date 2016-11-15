@@ -8,6 +8,7 @@ TagManager:
   - movable
   - box
   - pedestal
+  - Cubes
   layers:
   - Default
   - TransparentFX

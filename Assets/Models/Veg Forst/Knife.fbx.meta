@@ -1,57 +1,22 @@
 fileFormatVersion: 2
-guid: 457613e5c72312e42853a2959c4a88a6
-timeCreated: 1478922117
+guid: 50fe8ead82dfc7846a02987e461adef1
+timeCreated: 1479186564
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Circle
-    100002: Cube
-    100004: Cube1
-    100006: Diamond
-    100008: hexagon
-    100010: Octagon
-    100012: pCube1
-    100014: Pentagon
-    100016: //RootNode
-    100018: Triangle
-    400000: Circle
-    400002: Cube
-    400004: Cube1
-    400006: Diamond
-    400008: hexagon
-    400010: Octagon
-    400012: pCube1
-    400014: Pentagon
-    400016: //RootNode
-    400018: Triangle
-    2300000: Circle
-    2300002: Cube
-    2300004: Cube1
-    2300006: Diamond
-    2300008: hexagon
-    2300010: Octagon
-    2300012: pCube1
-    2300014: Pentagon
-    2300016: Triangle
-    3300000: Circle
-    3300002: Cube
-    3300004: Cube1
-    3300006: Diamond
-    3300008: hexagon
-    3300010: Octagon
-    3300012: pCube1
-    3300014: Pentagon
-    3300016: Triangle
-    4300000: Pentagon
-    4300002: Octagon
-    4300004: hexagon
-    4300006: Cube
-    4300008: Circle
-    4300010: Triangle
-    4300012: pCube1
-    4300014: Diamond
-    4300016: Cube1
+    100000: //RootNode
+    100002: pCube3
+    100004: pCylinder1
+    400000: //RootNode
+    400002: pCube3
+    400004: pCylinder1
+    2300000: pCube3
+    2300002: pCylinder1
+    3300000: pCube3
+    3300002: pCylinder1
+    4300000: pCube3
+    4300002: pCylinder1
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -77,7 +42,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
