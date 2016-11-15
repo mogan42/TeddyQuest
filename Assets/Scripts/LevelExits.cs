@@ -51,7 +51,7 @@ public class LevelExits : MonoBehaviour {
         GlobalLog levelEntrancePoint = globalLogObject.GetComponent<GlobalLog>();
 
         //{
-            Debug.Log("ahhhh");
+            //Debug.Log("ahhhh");
             if (levelEntrancePoint.caveExit == true)
             {
                 Debug.Log("First level down");
@@ -90,7 +90,7 @@ public class LevelExits : MonoBehaviour {
                 }
 
             }
-        Debug.Log("help please");
+        //Debug.Log("help please");
         //}
     }
 
