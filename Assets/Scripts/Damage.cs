@@ -3,12 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class Damage : MonoBehaviour {
-    /*
-     checks for enemy tag
-     if collides with enemy 
-     make damage counter = 1; and flash screen a hex colour, and add increase the alpha value to the canvas
-     if collides again make damage counter = 2;
-     */
+   
     public float Lives = 3;
     public float damageCooldown = 1.0f;
     public GameObject Spawnpoint;
@@ -19,6 +14,7 @@ public class Damage : MonoBehaviour {
     float AlphaValue;
     public Canvas DeadScreen;
     Collision col;
+    bool IsDead;
 
     private float damageTimer = 0;
 
@@ -28,9 +24,13 @@ public class Damage : MonoBehaviour {
         DamageTaken = 0;
         AlphaValue = 0;
         DeadScreen.gameObject.SetActive(false);
+        IsDead = false;
         Spawnpoint.transform.position = transform.position;
     }
-	
+	public bool DeathChecker()
+    {
+        return IsDead;
+    }
 	// Update is called once per frame
 	void Update ()
     {
@@ -51,8 +51,8 @@ public class Damage : MonoBehaviour {
                     DamageTaken++;
                     AlphaValue = ((DamageTaken/Lives + 1 /Lives) * 255)/255;
                     CanvasOfDamageUI.color = new Vector4(1, 0, 0, AlphaValue);
-                    Debug.Log("Damage taken: " + DamageTaken);
-                    Debug.Log("alpha taken: " + AlphaValue);
+                    //Debug.Log("Damage taken: " + DamageTaken);
+                    //Debug.Log("alpha taken: " + AlphaValue);
                     damageTimer = damageCooldown;
                     break;
                 }
@@ -65,8 +65,15 @@ public class Damage : MonoBehaviour {
             AlphaValue = ((DamageTaken / Lives) * 255) / 255;
             CanvasOfDamageUI.color = new Vector4(1, 1, 1, AlphaValue);
             DeadScreen.gameObject.SetActive(true);
-
+            Cursor.lockState = CursorLockMode.None;
+            IsDead = true;
+            Debug.Log(IsDead);
+        }
+        else
+        {
+            IsDead = false;
         }
     }
+    
 
 }

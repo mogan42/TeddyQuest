@@ -15,18 +15,24 @@ public class Movement : MonoBehaviour
     public float maxCameraHeight = 60;
     public float minCameraHeight = -60;
     public Canvas PausedMenu;
+    Damage  DeadCheck;
+    bool dead;
     void Start()
     {
+        DeadCheck = GetComponent<Damage>();
         PausedMenu.gameObject.SetActive(false);
        Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
+        dead = false;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(mouseLockKey))
+        dead = DeadCheck.DeathChecker();
+        if (Input.GetKeyDown(mouseLockKey) && !dead)
         {
-            Debug.Log("key is pressed");
+            Debug.Log(dead);
+            Debug.Log(DeadCheck.DeathChecker());
             if (Cursor.lockState == CursorLockMode.Locked)
             {
                 Cursor.lockState = CursorLockMode.None;
