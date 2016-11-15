@@ -3,6 +3,9 @@ using System.Collections;
 
 public class PedestalCheck2 : MonoBehaviour
 {
+
+    public PedestalDoorOpen PDO;
+
     public float checkLength = 20.0f;
     public GameObject toy2, floatingToy2;
 
@@ -21,6 +24,7 @@ public class PedestalCheck2 : MonoBehaviour
             {
                 toy2.SetActive(false);
                 floatingToy2.SetActive(true);
+                PDO.CountIncrease();
             }
 
         }
