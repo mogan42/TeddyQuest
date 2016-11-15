@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 457613e5c72312e42853a2959c4a88a6
-timeCreated: 1478922117
-licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -52,15 +50,6 @@ ModelImporter:
     4300012: pCube1
     4300014: Diamond
     4300016: Cube1
-    6400000: Circle
-    6400002: Cube
-    6400004: Cube1
-    6400006: Diamond
-    6400008: hexagon
-    6400010: Octagon
-    6400012: pCube1
-    6400014: Pentagon
-    6400016: Triangle
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -86,13 +75,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-<<<<<<< HEAD
-    globalScale: 10
-=======
-    globalScale: 15
->>>>>>> 19821dae8b212a5515e88bf76e1a66dd570c8f32
+    globalScale: 0
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
