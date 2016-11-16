@@ -3795,6 +3795,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ecf782d8e33d47648aba7a193918cec5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9999669
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ecf782d8e33d47648aba7a193918cec5, type: 3}
   m_IsPrefabParent: 0
@@ -4674,84 +4678,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000010523135056, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012762628682, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012762628682, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012762628682, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010614358730, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010272577284, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010614358730, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: edgesOnly
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010614358730, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010523135056, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: height
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010523135056, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: heightDensity
-      value: 0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010523135056, guid: d4dc811f8d869c84ca179e1e2f1666a6,
-        type: 2}
-      propertyPath: startDistance
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1000011312039710, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
       propertyPath: m_Name
       value: Player from Childs Room
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000011312039710, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000011563567786, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010638404694, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010558662616, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010193362896, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
