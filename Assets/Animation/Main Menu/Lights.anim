@@ -21,19 +21,199 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 2
-        inSlope: -1.8461537
-        outSlope: -1.8461537
+        inSlope: -0.4
+        outSlope: -0.4
         tangentMode: 10
-      - time: 1.0833334
+      - time: 5
         value: 0
-        inSlope: -1.8461537
-        outSlope: -1.8461537
+        inSlope: -0.1
+        outSlope: -0.1
+        tangentMode: 10
+      - time: 15
+        value: 2
+        inSlope: 0.2
+        outSlope: 0.2
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Intensity
     path: Point light (20)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.2
+        outSlope: -0.2
+        tangentMode: 10
+      - time: 10
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 20
+        value: 2
+        inSlope: 0.2
+        outSlope: 0.2
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_BounceIntensity
+    path: Point light (19)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.040147208
+        outSlope: -0.040147208
+        tangentMode: 10
+      - time: 49.816666
+        value: 0
+        inSlope: 0.0779656
+        outSlope: 0.0779656
+        tangentMode: 10
+      - time: 60.016666
+        value: 2
+        inSlope: 0.19607842
+        outSlope: 0.19607842
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (18)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.049958367
+        outSlope: -0.049958367
+        tangentMode: 10
+      - time: 40.033333
+        value: 0
+        inSlope: 0.0746886
+        outSlope: 0.0746886
+        tangentMode: 10
+      - time: 50.066666
+        value: 2
+        inSlope: 0.19933556
+        outSlope: 0.19933556
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (10)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.05703422
+        outSlope: -0.05703422
+        tangentMode: 10
+      - time: 35.066666
+        value: 0
+        inSlope: 0.0713165
+        outSlope: 0.0713165
+        tangentMode: 10
+      - time: 45.083332
+        value: 2
+        inSlope: 0.19966723
+        outSlope: 0.19966723
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (8)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.0670391
+        outSlope: -0.0670391
+        tangentMode: 10
+      - time: 29.833334
+        value: 0
+        inSlope: 0.064841114
+        outSlope: 0.064841114
+        tangentMode: 10
+      - time: 40
+        value: 2
+        inSlope: 0.19672133
+        outSlope: 0.19672133
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (6)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.1
+        outSlope: -0.1
+        tangentMode: 10
+      - time: 20
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 40
+        value: 2
+        inSlope: 0.1
+        outSlope: 0.1
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (5)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.13333334
+        outSlope: -0.13333334
+        tangentMode: 10
+      - time: 15
+        value: 0
+        inSlope: 0.032835826
+        outSlope: 0.032835826
+        tangentMode: 10
+      - time: 25.05
+        value: 2
+        inSlope: 0.199005
+        outSlope: 0.199005
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (1)
     classID: 108
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -50,13 +230,55 @@ AnimationClip:
       classID: 108
       customType: 25
       isPPtrCurve: 0
+    - path: 1092457414
+      attribute: 1127824095
+      script: {fileID: 0}
+      classID: 108
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1476829831
+      attribute: 898800009
+      script: {fileID: 0}
+      classID: 108
+      customType: 25
+      isPPtrCurve: 0
+    - path: 2430544015
+      attribute: 898800009
+      script: {fileID: 0}
+      classID: 108
+      customType: 25
+      isPPtrCurve: 0
+    - path: 3673587081
+      attribute: 898800009
+      script: {fileID: 0}
+      classID: 108
+      customType: 25
+      isPPtrCurve: 0
+    - path: 1148538887
+      attribute: 898800009
+      script: {fileID: 0}
+      classID: 108
+      customType: 25
+      isPPtrCurve: 0
+    - path: 1868039108
+      attribute: 898800009
+      script: {fileID: 0}
+      classID: 108
+      customType: 25
+      isPPtrCurve: 0
+    - path: 188008128
+      attribute: 898800009
+      script: {fileID: 0}
+      classID: 108
+      customType: 25
+      isPPtrCurve: 0
     pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0833334
+    m_StopTime: 60.016666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -77,19 +299,199 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 2
-        inSlope: -1.8461537
-        outSlope: -1.8461537
+        inSlope: -0.4
+        outSlope: -0.4
         tangentMode: 10
-      - time: 1.0833334
+      - time: 5
         value: 0
-        inSlope: -1.8461537
-        outSlope: -1.8461537
+        inSlope: -0.1
+        outSlope: -0.1
+        tangentMode: 10
+      - time: 15
+        value: 2
+        inSlope: 0.2
+        outSlope: 0.2
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Intensity
     path: Point light (20)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.2
+        outSlope: -0.2
+        tangentMode: 10
+      - time: 10
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 20
+        value: 2
+        inSlope: 0.2
+        outSlope: 0.2
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_BounceIntensity
+    path: Point light (19)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.040147208
+        outSlope: -0.040147208
+        tangentMode: 10
+      - time: 49.816666
+        value: 0
+        inSlope: 0.0779656
+        outSlope: 0.0779656
+        tangentMode: 10
+      - time: 60.016666
+        value: 2
+        inSlope: 0.19607842
+        outSlope: 0.19607842
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (18)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.049958367
+        outSlope: -0.049958367
+        tangentMode: 10
+      - time: 40.033333
+        value: 0
+        inSlope: 0.0746886
+        outSlope: 0.0746886
+        tangentMode: 10
+      - time: 50.066666
+        value: 2
+        inSlope: 0.19933556
+        outSlope: 0.19933556
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (10)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.05703422
+        outSlope: -0.05703422
+        tangentMode: 10
+      - time: 35.066666
+        value: 0
+        inSlope: 0.0713165
+        outSlope: 0.0713165
+        tangentMode: 10
+      - time: 45.083332
+        value: 2
+        inSlope: 0.19966723
+        outSlope: 0.19966723
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (8)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.0670391
+        outSlope: -0.0670391
+        tangentMode: 10
+      - time: 29.833334
+        value: 0
+        inSlope: 0.064841114
+        outSlope: 0.064841114
+        tangentMode: 10
+      - time: 40
+        value: 2
+        inSlope: 0.19672133
+        outSlope: 0.19672133
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (6)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.1
+        outSlope: -0.1
+        tangentMode: 10
+      - time: 20
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 40
+        value: 2
+        inSlope: 0.1
+        outSlope: 0.1
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (5)
+    classID: 108
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2
+        inSlope: -0.13333334
+        outSlope: -0.13333334
+        tangentMode: 10
+      - time: 15
+        value: 0
+        inSlope: 0.032835826
+        outSlope: 0.032835826
+        tangentMode: 10
+      - time: 25.05
+        value: 2
+        inSlope: 0.199005
+        outSlope: 0.199005
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Intensity
+    path: Point light (1)
     classID: 108
     script: {fileID: 0}
   m_EulerEditorCurves: []
