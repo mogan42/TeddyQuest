@@ -21819,6 +21819,11 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
   m_PrefabInternal: {fileID: 2139112463}
+--- !u!95 &758339289 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: ad68b54777dc13a43919cf14e27ab0d4,
+    type: 3}
+  m_PrefabInternal: {fileID: 2139112463}
 --- !u!65 &758339290
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21843,7 +21848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 817456897}
-  lockAnim: {fileID: 0}
+  lockAnim: {fileID: 758339289}
 --- !u!4 &759285537 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012481331032, guid: 402e82a28fd16ad4a9b44e2261f5eb67,
