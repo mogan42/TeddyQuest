@@ -19,7 +19,7 @@ public class FirstPuzzlePad : MonoBehaviour {
     //public AudioClip doorMoving;
     // Use this for initialization
 
-    public GameObject cubeFake, cubeReal;
+    public GameObject cubeReal, pillar;
 
     void Start()
     {
@@ -154,7 +154,7 @@ public class FirstPuzzlePad : MonoBehaviour {
         }
         if (correct)
         {
-            cubeFake.SetActive(false);
+            pillar.SetActive(true);
             cubeReal.SetActive(true);
         }
 

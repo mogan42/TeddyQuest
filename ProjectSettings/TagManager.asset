@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - box
+  - enemy
+  - BluePuzzle
+>>>>>>> 92ed47dcab594158e3ea2d3b8a9fcfbef30b37d4
   layers:
   - Default
   - TransparentFX
