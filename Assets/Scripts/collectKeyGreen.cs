@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class collectKey : MonoBehaviour {
+public class collectKeyGreen : MonoBehaviour {
 
     public int keysToGive;
     public GameObject player;
@@ -12,7 +12,7 @@ public class collectKey : MonoBehaviour {
         if (collided.tag == ("Player"))
         {
             KeyLog giveKey = player.GetComponent<KeyLog>();
-            giveKey.numberOfLevelKeys = keysToGive;
+            giveKey.hasGreenKey = true;
             Destroy(gameObject);
         }
     }

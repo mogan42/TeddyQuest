@@ -21826,11 +21826,24 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 758339288}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.59779656, y: 0.8238802, z: 0.16653183}
-  m_Center: {x: 0.0043354183, y: 0.2880602, z: -0.029069915}
+  m_Size: {x: 1.1953452, y: 1.678103, z: 0.9847337}
+  m_Center: {x: 0.0275517, y: -0.13905048, z: -0.43814856}
+--- !u!114 &758339291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 758339288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1958f03c9c96a6488aca1e78678777d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 817456897}
+  lockAnim: {fileID: 0}
 --- !u!4 &759285537 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012481331032, guid: 402e82a28fd16ad4a9b44e2261f5eb67,
@@ -22797,6 +22810,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfLevelKeys: 0
+  hasBlueKey: 0
+  hasGreenKey: 0
+  hasRedKey: 0
+  hasYellowKey: 0
 --- !u!1 &831485229
 GameObject:
   m_ObjectHideFlags: 0
@@ -26242,6 +26259,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 287ff759872a4414eb61c98925beabc8, type: 2}
+    - target: {fileID: 100000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
+      propertyPath: m_Name
+      value: PadLock Red
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
   m_IsPrefabParent: 0
@@ -40505,7 +40526,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1295269978}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c387cbe34fc5c34e923bf107d023be2, type: 3}
+  m_Script: {fileID: 11500000, guid: eac2531ef2022a046ab0bac6c3a76b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   keysToGive: 1
@@ -44179,7 +44200,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
       propertyPath: m_Name
-      value: PadLock (1)
+      value: PadLock Yellow
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
       propertyPath: m_LocalScale.x
@@ -54544,7 +54565,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1672175189}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c387cbe34fc5c34e923bf107d023be2, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ee32c5ec4c471a46bb7f896df7a7512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   keysToGive: 1
@@ -57746,7 +57767,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1819769633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c387cbe34fc5c34e923bf107d023be2, type: 3}
+  m_Script: {fileID: 11500000, guid: 16a1184b8f81bc444a6ffc685d71fedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   keysToGive: 1
@@ -62461,7 +62482,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000010891713004, guid: 818884094d3b30c458f48cf1096f964b,
     type: 2}
   m_PrefabInternal: {fileID: 1060819958}
---- !u!114 &2003585148
+--- !u!114 &2003585153
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -62472,7 +62493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a473feb3f99c0947bfb6f2ddec20b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 817456897}
 --- !u!1 &2008257222
 GameObject:
   m_ObjectHideFlags: 0
@@ -68600,7 +68621,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
       propertyPath: m_Name
-      value: PadLock (3)
+      value: PadLock Green
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
       propertyPath: m_LocalScale.x
@@ -68749,7 +68770,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
       propertyPath: m_Name
-      value: PadLock (2)
+      value: PadLock blue
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
       propertyPath: m_LocalScale.x
@@ -68783,6 +68804,10 @@ Prefab:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4accc4dc83697ab46b92b43eb2962593, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad68b54777dc13a43919cf14e27ab0d4, type: 3}
   m_IsPrefabParent: 0
