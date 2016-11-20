@@ -435,6 +435,7 @@ GameObject:
   - 23: {fileID: 23000010908529482}
   - 95: {fileID: 95000013064298194}
   - 114: {fileID: 114000014067825496}
+  - 65: {fileID: 65000012464324694}
   m_Layer: 0
   m_Name: Blue Key
   m_TagString: Untagged
@@ -7734,6 +7735,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65000012464324694
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010891713004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04331481, y: 0.76847476, z: 0.28531706}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95000010100617830
 Animator:
   serializedVersion: 3
