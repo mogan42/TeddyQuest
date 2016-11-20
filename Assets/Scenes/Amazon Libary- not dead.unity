@@ -21849,6 +21849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 817456897}
   lockAnim: {fileID: 758339289}
+  KeyToPress: 101
 --- !u!4 &759285537 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012481331032, guid: 402e82a28fd16ad4a9b44e2261f5eb67,
