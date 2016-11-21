@@ -3,11 +3,11 @@ using System.Collections;
 
 public class PedestalDoorOpen : MonoBehaviour
 {
-    public float openingSpeed = 10.0f;
+    //public float openingSpeed = 10.0f;
     private int pedestalActiveCount;
     public GameObject pedestalDoor;
 
-    public Animator openZeDoor;
+   // public Animator openZeDoor;
 
     // Use this for initialization
     void Start ()
@@ -26,8 +26,8 @@ public class PedestalDoorOpen : MonoBehaviour
     {
         if(pedestalActiveCount >= 5)
         {
-            //  pedestalDoor.SetActive(false);
-            openZeDoor.SetTrigger("NicsDoorTrigger");
+            pedestalDoor.SetActive(true);
+           // openZeDoor.SetTrigger("NicsDoorTrigger");
 
         }
     }
