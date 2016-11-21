@@ -7,6 +7,8 @@ public class PedestalDoorOpen : MonoBehaviour
     private int pedestalActiveCount;
     public GameObject pedestalDoor;
 
+    public Animator openZeDoor;
+
     // Use this for initialization
     void Start ()
     {
@@ -25,6 +27,7 @@ public class PedestalDoorOpen : MonoBehaviour
         if(pedestalActiveCount >= 5)
         {
             //  pedestalDoor.SetActive(false);
+            openZeDoor.SetTrigger("NicsDoorTrigger");
 
         }
     }
