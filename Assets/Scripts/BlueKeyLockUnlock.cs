@@ -8,13 +8,13 @@ public class BlueKeyLockUnlock : MonoBehaviour {
     public KeyCode KeyToPress = KeyCode.E;
 
 
-    void OnTriggerEnter(Collider collided)
+    void OnTriggerStay(Collider collided)
     {
         KeyLog hasRightKey = player.GetComponent<KeyLog>();
-        Debug.Log("GetComponent");
-          if (Input.GetKeyDown(KeyToPress) && hasRightKey.hasBlueKey == true)
+        //Debug.Log(hasRightKey.hasBlueKey);
+          if (Input.GetKeyDown(KeyToPress) && hasRightKey.hasBlueKey)
            {
-            Debug.Log("play animation");
+            //Debug.Log("play animation");
                 lockAnim.SetTrigger("Unlock");
            }
 

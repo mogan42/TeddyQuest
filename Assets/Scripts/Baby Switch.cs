@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using InControl;
+
 
 public class BabySwitch : MonoBehaviour
 {
@@ -14,7 +16,8 @@ public class BabySwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyToPress))
+        var inputDevice = InputManager.ActiveDevice;
+        if (Input.GetKeyDown(KeyToPress) || inputDevice.RightTrigger)
         {
             Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 1));
             RaycastHit hit;

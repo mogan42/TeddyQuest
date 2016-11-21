@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using InControl;
+
 
 public class BabyButton : MonoBehaviour
 {
@@ -11,12 +13,8 @@ public class BabyButton : MonoBehaviour
     public KeyCode KeyToPress = KeyCode.E;
     private float timer = 0;
     private bool correct = false;
-    //Animation Stuff
     public Animator babyButtons;
-    //Audio stuff
-    //public AudioSource door;
-    //public AudioClip doorMoving;
-    // Use this for initialization
+
     void Start ()
     {
         input = "";
@@ -29,13 +27,11 @@ public class BabyButton : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if (Input.GetKeyDown(KeyToPress))
+        var inputDevice = InputManager.ActiveDevice;
+        if (Input.GetKeyDown(KeyToPress) || inputDevice.RightTrigger)
         {
-            //Debug.Log("made it");
             if (Physics.Raycast(ray, out hit))
             {
-                //Debug.Log(hit.collider.gameObject.name);
-                //Debug.DrawRay(transform.position,Vector3.forward, Color.green);
                 if(hit.transform.gameObject == button1)
                 {
                     input += "1";
