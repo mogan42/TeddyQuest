@@ -11,6 +11,7 @@ public class GlobalLog : MonoBehaviour {
     public bool childsRoomExit;
 
     public int numberOfKeys;
+    public bool lock1Open = false, lock2Open = false, lock3Open = false;
 
     void Awake()
     {

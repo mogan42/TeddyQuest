@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using InControl;
+
 
 public class Buttons : MonoBehaviour
 {
@@ -16,7 +18,8 @@ public class Buttons : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.GetMouseButtonDown(0))
+        var inputDevice = InputManager.ActiveDevice;
+        if (Input.GetKeyDown(KeyCode.E) || inputDevice.RightTrigger)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;

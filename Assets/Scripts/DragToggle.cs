@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using InControl;
 
 public class DragToggle : MonoBehaviour
 {
@@ -20,7 +21,8 @@ public class DragToggle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyToPress))
+        var inputDevice = InputManager.ActiveDevice;
+        if (Input.GetKeyDown(KeyToPress) || inputDevice.RightTrigger)
         {
             if (itemPicked == false)
             {
