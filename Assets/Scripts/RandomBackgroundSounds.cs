@@ -1,15 +1,15 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿//using UnityEngine;
+//using System.Collections;
 
-public class RandomBackgroundSounds : MonoBehaviour
-{
-    public fixed clips AudioClip[10];
+//public class RandomBackgroundSounds : MonoBehaviour
+//{
+//    public fixed clips AudioClip[10];
 	
 
 
-	// Update is called once per frame
-	void Update ()
-    {
+//	// Update is called once per frame
+//	void Update ()
+//    {
 	
-	}
-}
+//	}
+//}
