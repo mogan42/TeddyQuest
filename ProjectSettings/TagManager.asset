@@ -3,12 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
+  tags: []
+=======
   tags:
-  - enemy
-  - movable
   - box
-  - pedestal
-  - toy1
+  - enemy
+  - BluePuzzle
+>>>>>>> 92ed47dcab594158e3ea2d3b8a9fcfbef30b37d4
   layers:
   - Default
   - TransparentFX
@@ -18,10 +20,10 @@ TagManager:
   - UI
   - 
   - 
-  - Hands/torch
-  - Interact
   - 
-  - walls and floors
+  - 
+  - 
+  - 
   - 
   - 
   - 

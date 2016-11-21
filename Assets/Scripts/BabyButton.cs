@@ -4,7 +4,7 @@ using System.Collections;
 public class BabyButton : MonoBehaviour
 {
     public GameObject button1, button2, button3, ClickedButton1, ClickedButton2, ClickedButton3;
-    public string password = "123";
+    public string password = "12345678";
     string input;
     int amountOfButtonsPressed;
     public float restartCooldown = 2.0f;
