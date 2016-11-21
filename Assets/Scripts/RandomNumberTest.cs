@@ -3,30 +3,38 @@ using System.Collections;
 
 public class RandomNumberTest : MonoBehaviour
 {
-    private float soundInt;
-    private float rndNum = Random.Range(1, 30);
-    private float soundTrigger = 0;
+    private int soundInter;
+    private int rndNum = Random.Range(200, 500);
+    private int soundTrigger = 0;
 
 	
     void Start()
     {
-        soundInt = rndNum;
+        soundInter = rndNum;
     }
 
 	void Awake()
     {
         Debug.Log(rndNum);
-        Debug.Log(soundInt);
+        
     }
 	
 
 	void Update()
     {
-        soundTrigger += Time.deltaTime;
+        Debug.Log(soundInter);
+        Debug.Log(soundTrigger);
 
-        if(soundTrigger == soundInt)
+        
+
+        if(soundTrigger == soundInter)
         {
             Debug.Log("play sound");
+            soundTrigger = 0;
+        }
+        else
+        {
+            soundTrigger += 1;
         }
 	}
 }
