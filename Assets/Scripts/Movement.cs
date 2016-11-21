@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using InControl;
+
 public class Movement : MonoBehaviour
 {
     private float verticalVelocity;
@@ -28,6 +30,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        var inputDevice = InputManager.ActiveDevice;
         dead = DeadCheck.DeathChecker();
         if (Input.GetKeyDown(mouseLockKey) && !dead)
         {
@@ -64,7 +67,7 @@ public class Movement : MonoBehaviour
             {
                 playerCamera.transform.localRotation = Quaternion.Euler(-minCameraHeight, 0, 0);
             }
-            if (Input.GetKeyDown(jumpKey) && controller.isGrounded)
+            if ((Input.GetKeyDown(jumpKey) || inputDevice.Action1 )&& controller.isGrounded)
             {
                 verticalVelocity = jumpForce;
             }

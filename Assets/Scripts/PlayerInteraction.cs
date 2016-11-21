@@ -16,12 +16,6 @@ public class PlayerInteraction : MonoBehaviour
 
     private GameObject movableObject;
 
-    //void Start()
-    //{
-    //    //interactKey.enabled = false;
-    //}
-
-
 
     void Update()
     {
