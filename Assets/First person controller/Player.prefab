@@ -577,6 +577,7 @@ GameObject:
   - 114: {fileID: 114000013221289324}
   - 114: {fileID: 114000011747543008}
   - 114: {fileID: 114000012137969446}
+  - 114: {fileID: 114000012375066634}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1409,7 +1410,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011312039710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5739274, y: 10.085928, z: -56.010216}
+  m_LocalPosition: {x: 185.85, y: 6.33, z: 206.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 82.886, z: 0}
   m_Children:
@@ -3030,6 +3031,37 @@ MonoBehaviour:
   torchWidth: 50
   torchLength: 10
   enemyInLight: 0
+--- !u!114 &114000012375066634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011312039710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d505ba05722534458b09face278c168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 0}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
+  button4: {fileID: 0}
+  button5: {fileID: 0}
+  button6: {fileID: 0}
+  button7: {fileID: 0}
+  button8: {fileID: 0}
+  ClickedButton1: {fileID: 0}
+  ClickedButton2: {fileID: 0}
+  ClickedButton3: {fileID: 0}
+  ClickedButton4: {fileID: 0}
+  ClickedButton5: {fileID: 0}
+  ClickedButton6: {fileID: 0}
+  ClickedButton7: {fileID: 0}
+  ClickedButton8: {fileID: 0}
+  password: 52831476
+  restartCooldown: 2
+  KeyToPress: 101
+  babyButtons: {fileID: 0}
 --- !u!114 &114000012459280346
 MonoBehaviour:
   m_ObjectHideFlags: 1
