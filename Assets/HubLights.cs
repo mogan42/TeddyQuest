@@ -22,27 +22,29 @@ public class HubLights : MonoBehaviour
     {
         if(globalLog.numberOfKeys !=0)
         {
+            if (startUp)
+            {
+                Morgan.SetActive(false);
+                Kaleb.SetActive(false);
+                Kristian.SetActive(false);
+                startUp = false;
+            }
             startLights = true;
+            if (globalLog.amazonLibraryExit)
+            {
+                Morgan.SetActive(true);
+            }
+            if (globalLog.caveExit)
+            {
+                Kristian.SetActive(true);
+            }
+            if (globalLog.vegForestExit)
+            {
+                Kaleb.SetActive(true);
+            }
         }
-        if (globalLog.amazonLibraryExit)
-        {
-            Morgan.SetActive(true);
-        }
-        if (globalLog.caveExit)
-        {
-            Kristian.SetActive(true);
-        }
-        if(globalLog.vegForestExit)
-        {
-            Kaleb.SetActive(true);
-        }
-        if(startUp)
-        {
-            Morgan.SetActive(false);
-            Kaleb.SetActive(false);
-            Kristian.SetActive(false);
-            startUp = false;
-        }
+       
+      
         if (startLights)
         {
             TimeRun += Time.deltaTime;
