@@ -10,6 +10,8 @@ public class playerProgress : MonoBehaviour {
 
     public int numberOfKeys;
 
+    public bool lock1Open = false, lock2Open = false, lock3Open = false;
+
     // loading data from GlobalLog
     void Start () {
 

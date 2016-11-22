@@ -9,14 +9,14 @@ public class StartHubLights : MonoBehaviour
     bool startLights = false;
     bool startUp = true;
     bool firstTimeStart = true;
-    public GlobalLog globalLog;
+    public playerProgress globalLog;
     void Update()
     {
         if (firstTimeStart)
         {
             StartUp();
         }
-        if (globalLog.numberOfKeys != 0)
+        if (globalLog.numberOfKeys > 0)
         {
             if (startUp)
             {
@@ -71,15 +71,16 @@ public class StartHubLights : MonoBehaviour
     }
     public void Lights()
     {
-        startLights = true;
         Morgan.SetActive(false);
         Kaleb.SetActive(false);
         Kristian.SetActive(false);
+        startLights = true;
     }
    public void StartUp()
     {
         Morgan.SetActive(true);
         Kaleb.SetActive(true);
         Kristian.SetActive(true);
+        firstTimeStart = false;
     }
 }

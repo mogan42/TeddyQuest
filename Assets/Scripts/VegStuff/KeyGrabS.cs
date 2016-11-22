@@ -13,6 +13,7 @@ public class KeyGrabS : MonoBehaviour {
         playerProgress giveOldKey = player.GetComponent<playerProgress>();
         if (d.tag == "Player" && Input.GetKeyDown(KeyToPress))
         {
+            giveOldKey.vegForestExit = true;
             giveOldKey.numberOfKeys++;
             giveOldKey.SaveProgress();
             SceneManager.LoadScene(sceneName);

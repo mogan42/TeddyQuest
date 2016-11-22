@@ -25139,6 +25139,9 @@ MonoBehaviour:
   amazonLibraryExit: 0
   childsRoomExit: 0
   numberOfKeys: 0
+  lock1Open: 0
+  lock2Open: 0
+  lock3Open: 0
 --- !u!114 &817456901
 MonoBehaviour:
   m_ObjectHideFlags: 0
