@@ -10,6 +10,6 @@ public class RespawnButton : MonoBehaviour
 	public void Respawn ()
     {
         damage.Respawn();
-        Cursor.lockState = CursorLockMode.Locked;
+
     }
 }
