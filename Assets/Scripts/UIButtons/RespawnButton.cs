@@ -10,5 +10,6 @@ public class RespawnButton : MonoBehaviour
 	public void Respawn ()
     {
         damage.Respawn();
+
     }
 }

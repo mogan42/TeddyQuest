@@ -41,6 +41,7 @@ public class Damage : MonoBehaviour {
         DamageTaken = 0;
         AlphaValue = ((DamageTaken / Lives) * 255) / 255;
         CanvasOfDamageUI.color = new Vector4(1, 1, 1, AlphaValue);
+        Cursor.lockState = CursorLockMode.Locked;
     }
     // Update is called once per frame
     void Update ()
