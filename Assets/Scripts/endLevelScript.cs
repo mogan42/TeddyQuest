@@ -11,6 +11,7 @@ public class endLevelScript : MonoBehaviour {
 
         playerProgress giveOldKey = player.GetComponent<playerProgress>();
         giveOldKey.numberOfKeys++;
+        giveOldKey.amazonLibraryExit = true;
         if (collided.tag == ("Player"))
         {
             giveOldKey.SaveProgress();

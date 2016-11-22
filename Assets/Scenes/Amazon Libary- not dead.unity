@@ -25455,6 +25455,7 @@ MonoBehaviour:
   restartCooldown: 2
   KeyToPress: 101
   babyButtons: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!114 &817456899
 MonoBehaviour:
   m_ObjectHideFlags: 0

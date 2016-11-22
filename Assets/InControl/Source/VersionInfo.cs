@@ -23,6 +23,7 @@ namespace InControl
 
 
 
+<<<<<<< HEAD
         public static VersionInfo InControlVersion()
         {
             return new VersionInfo()
@@ -33,6 +34,20 @@ namespace InControl
                 Build = 3899
             };
         }
+=======
+		public static VersionInfo InControlVersion()
+		{
+			return new VersionInfo() {
+				Major = 1,
+				Minor = 4,
+				Patch = 4,
+				Build = 3855
+
+
+			};
+		}
+
+>>>>>>> 3ba603a38bace990e1774716bdae0efb32faf643
 
 		public static VersionInfo UnityVersion()
 		{
