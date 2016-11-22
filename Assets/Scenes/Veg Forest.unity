@@ -23639,6 +23639,11 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1263378078}
+    - target: {fileID: 114000012652320746, guid: 9a01d46acfa020645aab9b016fea8904,
+        type: 2}
+      propertyPath: searchRadius
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a01d46acfa020645aab9b016fea8904, type: 2}
   m_IsPrefabParent: 0
