@@ -5,7 +5,7 @@ public class OpeningFinalDoor : MonoBehaviour
 {
 
     public GlobalLog globalLog;
-    public GameObject Lock1, Lock2, Lock3, Door;
+    //public GameObject Lock1, Lock2, Lock3, Door;
 
     public Animator padLock1, padLock2, padLock3, finalDoor;
 
