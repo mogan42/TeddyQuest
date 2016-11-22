@@ -6,8 +6,10 @@ public class PedestalDoorOpen : MonoBehaviour
     //public float openingSpeed = 10.0f;
     private int pedestalActiveCount;
     public GameObject pedestalDoor;
+    private int audioCounter = 0;
+    public AudioSource sound;
 
-   // public Animator openZeDoor;
+    // public Animator openZeDoor;
 
     // Use this for initialization
     void Start ()
@@ -27,9 +29,21 @@ public class PedestalDoorOpen : MonoBehaviour
         if(pedestalActiveCount >= 5)
         {
             pedestalDoor.SetActive(true);
-           // openZeDoor.SetTrigger("NicsDoorTrigger");
+            if (audioCounter == 0)
+            {
+                audioCounter = audioCounter + 1;
+            }
+            if (audioCounter == 1)
+            {
+                SoundPlay();
+                audioCounter = 2;
+            }
 
         }
     }
-
+    void SoundPlay()
+    {
+        //44100 = 1 second delay // 22050 = .5 second delay
+        sound.Play(44100);
+    }
 }

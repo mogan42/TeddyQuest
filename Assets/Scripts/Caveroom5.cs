@@ -14,6 +14,8 @@ public class Caveroom5 : MonoBehaviour
     private bool correct = false;
     //Animation Stuff
     public GameObject babyButtons;
+    private int audioCounter = 0;
+    public AudioSource sound;
     //Audio stuff
     //public AudioSource door;
     //public AudioClip doorMoving;
@@ -151,13 +153,22 @@ public class Caveroom5 : MonoBehaviour
         }
         if (correct)
         {
-            //Debug.Log("do the thing you wanted it to do");
-            //animating door
             babyButtons.SetActive(false);
-            //giving the door sound
-            //door.PlayOneShot(doorMoving, 0.7f);
-            //Debug.Log("I'm working");
+            if (audioCounter == 0)
+            {
+                audioCounter = audioCounter + 1;
+            }
+            if (audioCounter == 1)
+            {
+                SoundPlay();
+                audioCounter = 2;
+            }
         }
 
+    }
+    void SoundPlay()
+    {
+        //44100 = 1 second delay // 22050 = .5 second delay
+        sound.Play(44100);
     }
 }

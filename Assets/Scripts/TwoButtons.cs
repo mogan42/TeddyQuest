@@ -9,12 +9,15 @@ public class TwoButtons : MonoBehaviour
     public KeyCode KeyToPress = KeyCode.E;
     private int buttonsPressed;
     private bool button1Pressed, button2Pressed;
+    public AudioSource sound;
+    private int audioCounter = 0;
 
     void Start ()
     {
         buttonsPressed = 0;
         button1Pressed = false;
         button2Pressed = false;
+        
 
     }
 	
@@ -46,7 +49,24 @@ public class TwoButtons : MonoBehaviour
         }
         if (buttonsPressed == 2)
         {
-            itemToRemove.SetActive(false);
+            if(audioCounter == 0)
+            {
+                audioCounter = audioCounter + 1;
+            }
+            
+
+            if(audioCounter == 1)
+            {
+                SoundPlay();
+                itemToRemove.SetActive(false);
+                audioCounter = 2;
+            }
+           
         }
+    }
+
+    void SoundPlay()
+    {
+        sound.Play();
     }
 }
