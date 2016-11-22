@@ -14,7 +14,7 @@ public class Carrotdrop : MonoBehaviour {
             plateLight.SetActive(true);
             lightS.SetActive(true);
             pillar.SetActive(true);
-            //aI.SetActive(true);
+            aI.SetActive(true);
             arrow.SetActive(true);
         }
     }

@@ -42,7 +42,7 @@ GameObject:
   - 64: {fileID: 64000012429179002}
   - 95: {fileID: 95000012610924146}
   - 114: {fileID: 114000012731811354}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   - 64: {fileID: 64000013658138856}
   - 95: {fileID: 95000013527531202}
   - 114: {fileID: 114000013583505450}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,6 +436,7 @@ GameObject:
   - 95: {fileID: 95000013064298194}
   - 114: {fileID: 114000014067825496}
   - 65: {fileID: 65000012464324694}
+  - 114: {fileID: 114000011847394640}
   m_Layer: 0
   m_Name: Blue Key
   m_TagString: Untagged
@@ -474,7 +475,7 @@ GameObject:
   - 64: {fileID: 64000013815810750}
   - 95: {fileID: 95000011948070148}
   - 114: {fileID: 114000011322795268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +513,7 @@ GameObject:
   - 64: {fileID: 64000013696572014}
   - 95: {fileID: 95000011371178400}
   - 114: {fileID: 114000013457917796}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +605,7 @@ GameObject:
   - 64: {fileID: 64000010779293128}
   - 95: {fileID: 95000011367694654}
   - 114: {fileID: 114000010648698058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,7 +845,7 @@ GameObject:
   - 64: {fileID: 64000011896150402}
   - 95: {fileID: 95000013319066260}
   - 114: {fileID: 114000013340772682}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -894,7 +895,7 @@ GameObject:
   - 64: {fileID: 64000010220127848}
   - 95: {fileID: 95000013386462442}
   - 114: {fileID: 114000012549048068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -929,7 +930,7 @@ GameObject:
   - 64: {fileID: 64000010146255776}
   - 95: {fileID: 95000014127614368}
   - 114: {fileID: 114000011284820722}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -949,7 +950,7 @@ GameObject:
   - 64: {fileID: 64000013320164354}
   - 95: {fileID: 95000012969365970}
   - 114: {fileID: 114000013252605028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1185,7 +1186,7 @@ GameObject:
   - 64: {fileID: 64000012229164960}
   - 95: {fileID: 95000011928695794}
   - 114: {fileID: 114000013367892280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1205,7 +1206,7 @@ GameObject:
   - 64: {fileID: 64000011162843002}
   - 95: {fileID: 95000010100617830}
   - 114: {fileID: 114000011262981940}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1367,7 +1368,7 @@ GameObject:
   - 64: {fileID: 64000014068909188}
   - 95: {fileID: 95000013956903888}
   - 114: {fileID: 114000013748330136}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1387,7 +1388,7 @@ GameObject:
   - 64: {fileID: 64000011937155504}
   - 95: {fileID: 95000013457742018}
   - 114: {fileID: 114000013889199568}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1443,7 +1444,7 @@ GameObject:
   - 64: {fileID: 64000014255171062}
   - 95: {fileID: 95000013172539950}
   - 114: {fileID: 114000013847902588}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1463,7 +1464,7 @@ GameObject:
   - 64: {fileID: 64000010325589618}
   - 95: {fileID: 95000013337870884}
   - 114: {fileID: 114000013977604772}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1483,7 +1484,7 @@ GameObject:
   - 64: {fileID: 64000013368933602}
   - 95: {fileID: 95000011267344250}
   - 114: {fileID: 114000011004870566}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1524,7 +1525,7 @@ GameObject:
   - 64: {fileID: 64000011912891132}
   - 95: {fileID: 95000013462411266}
   - 114: {fileID: 114000013194333700}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1580,7 +1581,7 @@ GameObject:
   - 64: {fileID: 64000013478465770}
   - 95: {fileID: 95000011708279570}
   - 114: {fileID: 114000011924531640}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1750,7 +1751,7 @@ GameObject:
   - 64: {fileID: 64000011411013270}
   - 95: {fileID: 95000010362985574}
   - 114: {fileID: 114000013126412682}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1770,7 +1771,7 @@ GameObject:
   - 64: {fileID: 64000012877652674}
   - 95: {fileID: 95000011034504436}
   - 114: {fileID: 114000011457915020}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1790,7 +1791,7 @@ GameObject:
   - 64: {fileID: 64000011406198178}
   - 95: {fileID: 95000012486275156}
   - 114: {fileID: 114000010530885926}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1828,7 +1829,7 @@ GameObject:
   - 64: {fileID: 64000011066231704}
   - 95: {fileID: 95000013362356246}
   - 114: {fileID: 114000014181749752}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1865,7 +1866,7 @@ GameObject:
   - 64: {fileID: 64000010680825994}
   - 95: {fileID: 95000013573186368}
   - 114: {fileID: 114000010618885240}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2023,7 +2024,7 @@ GameObject:
   - 64: {fileID: 64000011948402858}
   - 95: {fileID: 95000010844480158}
   - 114: {fileID: 114000010841397058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fatcrystal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8744,6 +8745,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   On: {fileID: 1000011003708280}
   Off: {fileID: 1000014036296588}
+--- !u!114 &114000011847394640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010891713004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a473feb3f99c0947bfb6f2ddec20b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &114000011924531640
 MonoBehaviour:
   m_ObjectHideFlags: 1
