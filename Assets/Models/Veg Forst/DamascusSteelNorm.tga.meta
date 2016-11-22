@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: dfb42503e17bda648811ae328e65fc6c
-timeCreated: 1479774742
+guid: 225c623cc298f1e42b99c9c2295f15f9
+timeCreated: 1479774817
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -15,7 +15,7 @@ TextureImporter:
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
-    convertToNormalMap: 0
+    convertToNormalMap: 1
     externalNormalMap: 1
     heightScale: 0.25
     normalMapFilter: 0
