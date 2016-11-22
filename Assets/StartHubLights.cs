@@ -8,9 +8,14 @@ public class StartHubLights : MonoBehaviour
     float TimeRun = 1;
     bool startLights = false;
     bool startUp = true;
+    bool firstTimeStart = true;
     public GlobalLog globalLog;
     void Update()
     {
+        if (firstTimeStart)
+        {
+            StartUp();
+        }
         if (globalLog.numberOfKeys != 0)
         {
             if (startUp)
@@ -24,7 +29,32 @@ public class StartHubLights : MonoBehaviour
         }
         if (startLights)
         {
-            Lights();
+            TimeRun += Time.deltaTime;
+            Light1.SetActive(true);
+            if (TimeRun > 1)
+            {
+                Light2.SetActive(true);
+            }
+            if (TimeRun > 2)
+            {
+                Light3.SetActive(true);
+            }
+            if (TimeRun > 3)
+            {
+                Light4.SetActive(true);
+            }
+            if (TimeRun > 4)
+            {
+                Light5.SetActive(true);
+            }
+            if (TimeRun > 5)
+            {
+                Light6.SetActive(true);
+            }
+            if (TimeRun > 6)
+            {
+                Light7.SetActive(true);
+            }
         }
         if (globalLog.amazonLibraryExit)
         {
@@ -41,38 +71,15 @@ public class StartHubLights : MonoBehaviour
     }
     public void Lights()
     {
-        TimeRun += Time.deltaTime;
-        Light1.SetActive(true);
-        if (TimeRun > 1)
-        {
-            Light2.SetActive(true);
-        }
-        if (TimeRun > 2)
-        {
-            Light3.SetActive(true);
-        }
-        if (TimeRun > 3)
-        {
-            Light4.SetActive(true);
-        }
-        if (TimeRun > 4)
-        {
-            Light5.SetActive(true);
-        }
-        if (TimeRun > 5)
-        {
-            Light6.SetActive(true);
-        }
-        if (TimeRun > 6)
-        {
-            Light7.SetActive(true);
-        }
+        startLights = true;
+        Morgan.SetActive(false);
+        Kaleb.SetActive(false);
+        Kristian.SetActive(false);
     }
    public void StartUp()
     {
         Morgan.SetActive(true);
         Kaleb.SetActive(true);
         Kristian.SetActive(true);
-        startLights = true;
     }
 }

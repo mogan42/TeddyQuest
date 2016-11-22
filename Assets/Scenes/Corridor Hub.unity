@@ -6271,7 +6271,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400126, guid: 334ae3b0d6c956e48ad4ea652db1deef, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 935673149}
-  m_LocalRotation: {x: 0.301114, y: -0.36041516, z: 0.639869, w: 0.60827535}
+  m_LocalRotation: {x: 0.30111402, y: -0.3604152, z: 0.63986903, w: 0.6082754}
   m_LocalPosition: {x: -0.067047276, y: 0.09201358, z: -0.09616172}
   m_LocalScale: {x: 1, y: 1, z: -1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9937,7 +9937,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1479459701}
   - 65: {fileID: 1479459704}
-  - 114: {fileID: 1479459703}
   - 114: {fileID: 1479459702}
   m_Layer: 0
   m_Name: LightSwitch (Entrance)
@@ -9981,18 +9980,6 @@ MonoBehaviour:
   Kaleb: {fileID: 1804268913}
   Kristian: {fileID: 1203604165}
   globalLog: {fileID: 148108304}
---- !u!114 &1479459703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1479459700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 836ceef282dcaa24ea2b8d6bc5e4cab4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lights: {fileID: 0}
 --- !u!65 &1479459704
 BoxCollider:
   m_ObjectHideFlags: 0
