@@ -1,2 +1,0 @@
-Create an empty game object and call it Spawnpoint.
-You will then have to drag that game object into the Damage script on the player;The Respawn Button Script in DeadCanvas(in player); and into the SpawnSetter.
