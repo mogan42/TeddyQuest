@@ -46,7 +46,6 @@ public class HubLights : MonoBehaviour
         if (startLights)
         {
             TimeRun += Time.deltaTime;
-            Debug.Log(TimeRun);
             Light1.SetActive(true);
             if (TimeRun > 1)
             {
@@ -73,9 +72,5 @@ public class HubLights : MonoBehaviour
                 Light7.SetActive(true);
             }
         }
-    }
-    void TurnOnLights()
-    {
-
     }
 }
