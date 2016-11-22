@@ -2286,7 +2286,17 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 23000012214370160, guid: 26d4be91d75950646bed2a6bdc754c57,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cedb9861214696647816e580f7b7de0d, type: 2}
+    - target: {fileID: 1000013260898726, guid: 26d4be91d75950646bed2a6bdc754c57, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 54000010236948478, guid: 26d4be91d75950646bed2a6bdc754c57, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 26d4be91d75950646bed2a6bdc754c57, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &255861075 stripped
@@ -2450,7 +2460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactKey: {fileID: 876769853}
-  visionLength: 10
+  visionLength: 5
   LayerName: Interact
   Button: 113
 --- !u!4 &268662560 stripped
@@ -3360,7 +3370,12 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -43.952003
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1000010764417784, guid: 602dd3c487a82e0489200a2c571c8a59, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 54000011611320570, guid: 602dd3c487a82e0489200a2c571c8a59, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 602dd3c487a82e0489200a2c571c8a59, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &354032832
@@ -4309,7 +4324,12 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 204.43
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1000013596204180, guid: f92576b9181aebf4c87dff7ecc53b427, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 54000014007227876, guid: f92576b9181aebf4c87dff7ecc53b427, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f92576b9181aebf4c87dff7ecc53b427, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &525439242 stripped
@@ -4425,7 +4445,12 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.75992364
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1000010764417784, guid: 602dd3c487a82e0489200a2c571c8a59, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 54000011611320570, guid: 602dd3c487a82e0489200a2c571c8a59, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 602dd3c487a82e0489200a2c571c8a59, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &596321563 stripped
@@ -5829,6 +5854,10 @@ Prefab:
       propertyPath: doorSwitch
       value: 
       objectReference: {fileID: 1427642226}
+    - target: {fileID: 1000013498063596, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
+      propertyPath: m_Name
+      value: Interact E
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4dc811f8d869c84ca179e1e2f1666a6, type: 2}
   m_IsPrefabParent: 0
@@ -7022,7 +7051,12 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5149036
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1000013596204180, guid: f92576b9181aebf4c87dff7ecc53b427, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 54000014007227876, guid: f92576b9181aebf4c87dff7ecc53b427, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f92576b9181aebf4c87dff7ecc53b427, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &974890730
@@ -9496,7 +9530,12 @@ Prefab:
       propertyPath: m_Name
       value: toyblock Shapes (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1000010764417784, guid: 602dd3c487a82e0489200a2c571c8a59, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 54000011611320570, guid: 602dd3c487a82e0489200a2c571c8a59, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 602dd3c487a82e0489200a2c571c8a59, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1333630816 stripped
@@ -12413,7 +12452,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 45cf849042bba124d9c6042a709a489b, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6400000, guid: 45cf849042bba124d9c6042a709a489b, type: 3}
