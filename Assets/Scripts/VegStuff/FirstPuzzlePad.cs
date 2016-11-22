@@ -130,7 +130,7 @@ public class FirstPuzzlePad : MonoBehaviour {
         }
         if (timer <= 0)
         {
-            if (amountOfButtonsPressed == 3 && !correct)
+            if (amountOfButtonsPressed == 8 && !correct)
             {
                 input = "";
                 amountOfButtonsPressed = 0;

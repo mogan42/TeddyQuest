@@ -22,19 +22,16 @@ namespace InControl
 		}
 
 
-
-		public static VersionInfo InControlVersion()
-		{
-			return new VersionInfo() {
-				Major = 1,
-				Minor = 4,
-				Patch = 4,
-				Build = 3855
-
-
-			};
-		}
-
+        public static VersionInfo InControlVersion()
+        {
+            return new VersionInfo()
+            {
+                Major = 1,
+                Minor = 4,
+                Patch = 4,
+                Build = 3909
+            };
+        }
 
 		public static VersionInfo UnityVersion()
 		{
